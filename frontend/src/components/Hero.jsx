@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import HeroScene from "./HeroScene";
+import ErrorBoundary from "./ErrorBoundary";
 import { useI18n } from "../context/I18nContext";
 import { useReducedMotion } from "../hooks/useReducedMotion";
 
@@ -43,7 +44,9 @@ const Hero = () => {
       className="relative min-h-screen w-full overflow-hidden"
     >
       <div className="absolute inset-0 z-0" aria-hidden="true">
-        <HeroScene />
+        <ErrorBoundary fallback={<div className="w-full h-full bg-[var(--bg-base)]" />}>
+          <HeroScene />
+        </ErrorBoundary>
       </div>
 
       {/* Vignette */}

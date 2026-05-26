@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Globe from "./Globe";
+import ErrorBoundary from "./ErrorBoundary";
 import { useI18n } from "../context/I18nContext";
 
 const fadeUp = {
@@ -125,7 +126,9 @@ const About = () => {
                 data-testid="about-globe"
                 aria-hidden="true"
               >
-                <Globe />
+                <ErrorBoundary fallback={<div className="w-full h-full rounded-full border border-white/10" />}>
+                  <Globe />
+                </ErrorBoundary>
               </div>
               <div className="font-mono text-[12px] leading-relaxed text-[var(--text-secondary)]">
                 <div className="text-[10px] uppercase tracking-[0.3em] text-[var(--amber)] mb-2">

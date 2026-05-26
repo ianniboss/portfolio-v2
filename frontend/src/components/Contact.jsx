@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useI18n } from "../context/I18nContext";
 import { PROFILE } from "../data/portfolio";
 import ContactParticles from "./ContactParticles";
+import ErrorBoundary from "./ErrorBoundary";
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
@@ -37,7 +38,9 @@ const Contact = () => {
     >
       {/* Particle background */}
       <div className="absolute inset-0 z-0 opacity-70" aria-hidden="true">
-        <ContactParticles />
+        <ErrorBoundary fallback={<div className="w-full h-full" />}>
+          <ContactParticles />
+        </ErrorBoundary>
       </div>
       <div
         className="absolute inset-0 z-[1] pointer-events-none"

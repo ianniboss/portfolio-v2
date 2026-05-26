@@ -2,6 +2,7 @@ import React, { Suspense, useMemo, useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Float, Html, AdaptiveDpr } from "@react-three/drei";
 import { motion } from "framer-motion";
+import ErrorBoundary from "./ErrorBoundary";
 import { SKILLS, SKILL_GROUP_COLORS } from "../data/portfolio";
 import { useI18n } from "../context/I18nContext";
 import { useReducedMotion } from "../hooks/useReducedMotion";
@@ -166,11 +167,13 @@ const Skills = () => {
               className="relative h-[460px] md:h-[520px] rounded-md border border-white/10 bg-[#0A0F1A]/40 overflow-hidden"
               data-testid="skills-canvas-wrapper"
             >
-              <SkillsCanvas
-                skills={SKILLS}
-                activeIdx={activeIdx}
-                setActiveIdx={setActiveIdx}
-              />
+              <ErrorBoundary fallback={<div className="w-full h-full" />}>
+                <SkillsCanvas
+                  skills={SKILLS}
+                  activeIdx={activeIdx}
+                  setActiveIdx={setActiveIdx}
+                />
+              </ErrorBoundary>
               <div className="pointer-events-none absolute top-4 left-4 right-4 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.3em] text-[var(--text-secondary)]">
                 <span>// skill cloud</span>
                 <span>{SKILLS.length} nodes</span>
