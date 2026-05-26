@@ -1,0 +1,145 @@
+{
+  "project_info": {
+    "name": "Ian Bin Syahrul Azlan - Portfolio",
+    "theme": "Developer from Two Worlds (Malaysia + France)",
+    "target_audience": "Recruiters, Hiring Managers in France (Alternance 2026)",
+    "app_type": "3D Experience Portfolio",
+    "theme_mode": "dark",
+    "archetype": "Swiss Luxury (Archetype 4 + 5 Fusion)"
+  },
+  "colors": {
+    "background": {
+      "base": "#0D0D0D",
+      "tint": "#0A0F1A"
+    },
+    "primary": {
+      "amber": "#C8903A",
+      "description": "Warm gold used for magnetic interactions, active states, and 3D rim lighting."
+    },
+    "secondary": {
+      "teal": "#2A8B7A",
+      "description": "Muted teal used sparingly for hover states, tooltips, or subtle 3D material accents. NOT for primary CTAs."
+    },
+    "text": {
+      "primary": "#F0EDE6",
+      "secondary": "#9A9490"
+    },
+    "surface": {
+      "card": "#141820",
+      "border": "rgba(255, 255, 255, 0.07)",
+      "glass": "rgba(20, 24, 32, 0.6)"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "headings": {
+        "family": "Cabinet Grotesk",
+        "fallback": "sans-serif",
+        "description": "Swiss-influenced, architectural, precise."
+      },
+      "body": {
+        "family": "Satoshi",
+        "fallback": "sans-serif",
+        "description": "Clean, geometric, highly legible for technical content."
+      },
+      "mono": {
+        "family": "JetBrains Mono",
+        "fallback": "monospace",
+        "description": "Used specifically for code snippets, tags, or small technical labels."
+      }
+    },
+    "scales": {
+      "h1": "text-5xl md:text-6xl+ tracking-tighter leading-none font-medium",
+      "h2": "text-3xl md:text-4xl tracking-tight leading-tight",
+      "h3": "text-2xl font-medium tracking-tight",
+      "body": "text-base md:text-lg leading-relaxed text-[#9A9490]",
+      "label": "text-xs tracking-[0.2em] uppercase text-[#C8903A]"
+    }
+  },
+  "spacing_and_layout": {
+    "philosophy": "Generous Spacing, Optical Alignment",
+    "container_padding": "px-6 md:px-12 lg:px-24 py-20 md:py-32",
+    "grid_system": {
+      "projects": "grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12",
+      "about": "grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center"
+    }
+  },
+  "components": {
+    "navigation": {
+      "style": "Glassmorphism Minimal",
+      "classes": "fixed top-0 w-full z-50 backdrop-blur-xl bg-[#0D0D0D]/60 border-b border-white/[0.04]",
+      "interaction": "Magnetic hover effect on links, smooth underline reveal using Framer Motion.",
+      "features": ["EN/FR Language Toggle (Text-based, no flags)", "Logo: Text-based 'I.S.A'"]
+    },
+    "hero_section": {
+      "layout": "Full-height 100vh canvas",
+      "visuals": "React Three Fiber (R3F) Canvas as background. Floating low-poly geometric shapes (representing fragments of 2 worlds merging).",
+      "interactions": "Mouse parallax driving the camera/rotation of shapes. Name typing animation in foreground.",
+      "typography_layer": "Absolute positioned over canvas, pointer-events-none for text, explicit pointer-events-auto for CTAs."
+    },
+    "about_section": {
+      "layout": "Asymmetric Bento (lg:grid-cols-12)",
+      "portrait_column": "lg:col-span-5. Image container rounded-none or subtle 4px. Grayscale portrait with amber hover tint.",
+      "text_column": "lg:col-span-7",
+      "globe_widget": "Small R3F interactive wireframe globe embedded in the text column, plotting Malaysia -> France."
+    },
+    "skills_section": {
+      "layout": "Full-width interactive field or grouped clusters.",
+      "visuals": "3D Orbs (R3F) floating with custom shaders. Grouped by category (Frontend, Backend, Design).",
+      "interactions": "Hovering an orb halts its float, scales it slightly, and triggers an HTML tooltip overlay via Drei's <Html> component."
+    },
+    "project_cards": {
+      "background": "#141820",
+      "border": "1px solid rgba(255,255,255,0.07)",
+      "interactions": "3D flip on hover using Framer Motion (perspective: 1000px, rotateY or rotateX).",
+      "content": "Front: Image + Title. Back: Tech stack, short description, links."
+    },
+    "contact_section": {
+      "background": "tsparticles field simulating stardust or digital noise.",
+      "form": "Glassmorphism card, dense layout, floating over the particles.",
+      "inputs": "Shadcn based but customized: bg-transparent, border-b only, or 1px subtle outline. Focus state: border-[#C8903A]."
+    }
+  },
+  "motion_and_interactions": {
+    "scrolling": "Lenis for smooth, momentum-based scrolling.",
+    "reveals": "Scroll-triggered text reveals (lines or words animating up with opacity) using Framer Motion + Intersection Observer.",
+    "cursor": "Custom minimal dot that expands or magnetizes over interactive elements."
+  },
+  "testing": {
+    "requirements": "All interactive elements MUST include a data-testid attribute in kebab-case."
+  },
+  "media": {
+    "images": [
+      {
+        "category": "hero_background_texture",
+        "url": "https://static.prod-images.emergentagent.com/jobs/55c8b569-7b33-40eb-a3c5-0bcc17acda1d/images/cae1bb679d98b3e4341b0ca2ae8a8166b0c74c9ed97bc5c7ff2ce953730c8993.png",
+        "description": "Abstract 3D floating geometry, subtle amber/teal rim lighting. Can be used as a fallback if R3F isn't fully utilized, or as a texture map."
+      },
+      {
+        "category": "about_portrait",
+        "url": "https://images.unsplash.com/photo-1634938332514-6f3d23c8cc42?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwxfHxhc2lhbiUyMHlvdW5nJTIwbWFsZSUyMHByb2Zlc3Npb25hbCUyMGRldmVsb3BlciUyMHBvcnRyYWl0JTIwZGFyayUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzc5Nzg2MTk5fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Asian young male professional portrait for Ian's bio section. Dark background matches theme."
+      },
+      {
+        "category": "project_placeholder_1",
+        "url": "https://images.pexels.com/photos/27141316/pexels-photo-27141316.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Minimalist digital dashboard interface for project card thumbnail."
+      },
+      {
+        "category": "project_placeholder_2",
+        "url": "https://images.pexels.com/photos/13916677/pexels-photo-13916677.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Detailed tech interface for secondary project card."
+      }
+    ]
+  },
+  "dependencies_to_install": [
+    "framer-motion",
+    "@studio-freight/lenis",
+    "three",
+    "@react-three/fiber",
+    "@react-three/drei",
+    "@tsparticles/react",
+    "@tsparticles/engine",
+    "lucide-react"
+  ]
+}
