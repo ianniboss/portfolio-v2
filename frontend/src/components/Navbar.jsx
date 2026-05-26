@@ -98,6 +98,7 @@ const Navbar = () => {
               <button
                 key={l}
                 data-testid={`locale-${l}`}
+                aria-pressed={locale === l}
                 onClick={() => setLocale(l)}
                 className={`px-2 py-1 rounded-full transition-all ${
                   locale === l
