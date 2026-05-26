@@ -1,53 +1,97 @@
-import { useEffect } from "react";
-import "@/App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
+import React, { useEffect } from "react";
+import "./App.css";
+import Lenis from "lenis";
+import { I18nProvider } from "./context/I18nContext";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Experience from "./components/Experience";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import CustomCursor from "./components/CustomCursor";
+import { useReducedMotion } from "./hooks/useReducedMotion";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
+const Marquee = () => {
+  const items = [
+    "Java",
+    "React",
+    "Docker",
+    "SCRUM",
+    "PHP 8.4",
+    "Linux",
+    "PL/SQL",
+    "Oracle APEX",
+    "Toulouse → World",
+    "Alternance · Sept 2026",
+  ];
+  return (
+    <div
+      data-testid="brand-marquee"
+      className="border-y border-white/10 py-5 overflow-hidden bg-[var(--bg-tint)]"
+    >
+      <div className="marquee-track inline-flex whitespace-nowrap font-display text-2xl md:text-4xl">
+        {Array.from({ length: 2 }).map((_, k) => (
+          <div key={k} className="inline-flex items-center">
+            {items.map((it, i) => (
+              <span key={i} className="px-8 text-[var(--text-secondary)]">
+                {it}{" "}
+                <span className="text-[var(--amber)] mx-2">✦</span>
+              </span>
+            ))}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
 
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
+const Shell = () => {
+  const reduced = useReducedMotion();
 
   useEffect(() => {
-    helloWorldApi();
-  }, []);
+    if (reduced) return;
+    const lenis = new Lenis({
+      duration: 1.2,
+      smoothWheel: true,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    });
+    let frame;
+    const raf = (time) => {
+      lenis.raf(time);
+      frame = requestAnimationFrame(raf);
+    };
+    frame = requestAnimationFrame(raf);
+    return () => {
+      cancelAnimationFrame(frame);
+      lenis.destroy();
+    };
+  }, [reduced]);
 
   return (
-    <div>
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
+    <div className="App grain relative">
+      <CustomCursor />
+      <Navbar />
+      <main>
+        <Hero />
+        <Marquee />
+        <About />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
 };
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <I18nProvider>
+      <Shell />
+    </I18nProvider>
   );
 }
 
