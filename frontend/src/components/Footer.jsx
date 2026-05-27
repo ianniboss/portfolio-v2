@@ -16,6 +16,15 @@ const Footer = () => {
         <div className="text-[12px] text-[var(--text-secondary)]">{t.footer.built}</div>
         <div className="flex items-center gap-5 font-mono text-[11px] uppercase tracking-[0.3em]">
           <a
+            data-testid="footer-cv"
+            href={PROFILE.cv}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="text-[var(--text-primary)] hover:text-[var(--amber)] transition-colors"
+          >
+            CV
+          </a>
+          <a
             data-testid="footer-email"
             href={`mailto:${PROFILE.email}`}
             className="text-[var(--text-primary)] hover:text-[var(--amber)] transition-colors"

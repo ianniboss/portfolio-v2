@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { useI18n } from "../context/I18nContext";
+import { PROFILE } from "../data/portfolio";
 
 const sections = ["home", "about", "skills", "projects", "contact"];
 
@@ -145,6 +146,16 @@ const Navbar = () => {
                 {item.label}
               </a>
             ))}
+            <a
+              href={PROFILE.cv}
+              target="_blank"
+              rel="noreferrer noopener"
+              data-testid="nav-mobile-cv"
+              onClick={() => setOpen(false)}
+              className="font-display text-2xl text-[var(--amber)] inline-flex items-center gap-2"
+            >
+              ↗ {t.nav.resume}
+            </a>
           </div>
         </motion.div>
       )}

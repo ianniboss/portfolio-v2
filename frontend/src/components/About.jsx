@@ -13,8 +13,7 @@ const fadeUp = {
   }),
 };
 
-const PORTRAIT_URL =
-  "https://images.unsplash.com/photo-1634938332514-6f3d23c8cc42?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwxfHxhc2lhbiUyMHlvdW5nJTIwbWFsZSUyMHByb2Zlc3Npb25hbCUyMGRldmVsb3BlciUyMHBvcnRyYWl0JTIwZGFyayUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzc5Nzg2MTk5fDA&ixlib=rb-4.1.0&q=85";
+const PORTRAIT_URL = "/assets/ian-portrait.jpg";
 
 const About = () => {
   const { t } = useI18n();
@@ -50,8 +49,8 @@ const About = () => {
                 src={PORTRAIT_URL}
                 alt="Ian Bin Syahrul Azlan portrait"
                 data-testid="about-portrait"
-                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
-                style={{ filter: "contrast(1.05) brightness(0.95)" }}
+                className="w-full h-full object-cover object-[50%_18%] grayscale group-hover:grayscale-0 transition-all duration-700"
+                style={{ filter: "contrast(1.05) brightness(0.98)" }}
               />
               <div
                 className="absolute inset-0 mix-blend-overlay"

@@ -6,8 +6,11 @@ export const PROFILE = {
   email: "ianhafiz9999@gmail.com",
   phone: "+33 7 44 43 99 59",
   location: "Toulouse, France",
-  github: "https://github.com/ianhafiz",
+  github: "https://github.com/ianniboss",
+  githubLabel: "ianniboss",
   linkedin: "https://www.linkedin.com/in/ian-bin-syahrul-azlan",
+  cv: "/assets/Ian_Bin_Syahrul_Azlan_CV.pdf",
+  portrait: "/assets/ian-portrait.jpg",
 };
 
 export const COPY = {
