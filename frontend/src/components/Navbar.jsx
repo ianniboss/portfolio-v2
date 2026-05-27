@@ -91,6 +91,16 @@ const Navbar = () => {
         </nav>
 
         <div className="flex items-center gap-4">
+          <a
+            href={PROFILE.cv}
+            target="_blank"
+            rel="noreferrer noopener"
+            data-testid="nav-cv"
+            data-magnetic
+            className="hidden md:inline-flex items-center gap-2 text-[12px] font-mono uppercase tracking-[0.25em] text-[var(--text-primary)] hover:text-[var(--amber)] transition-colors"
+          >
+            <span aria-hidden="true">↗</span> {t.nav.resume}
+          </a>
           <div
             className="flex items-center gap-1 font-mono text-[11px] tracking-widest uppercase border border-white/10 rounded-full px-1 py-1"
             data-testid="locale-toggle"
