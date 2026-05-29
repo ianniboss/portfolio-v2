@@ -16,7 +16,7 @@ const accentColor = (a) => {
   }
 };
 
-const ProjectCover = ({ hue, accent, title, year }) => (
+const ProjectCover = ({ hue, accent, title, year, ongoing }) => (
   <div
     className="relative w-full h-full overflow-hidden"
     style={{
@@ -44,7 +44,17 @@ const ProjectCover = ({ hue, accent, title, year }) => (
     <div className="absolute inset-0 p-6 flex flex-col justify-between">
       <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.3em] text-[var(--text-secondary)]">
         <span>{year}</span>
-        <span style={{ color: accentColor(accent) }}>●</span>
+        <div className="flex items-center gap-2">
+          {ongoing && (
+            <span
+              className="px-2 py-0.5 rounded-full text-[9px]"
+              style={{ background: `${accentColor(accent)}22`, color: accentColor(accent), border: `1px solid ${accentColor(accent)}55` }}
+            >
+              live
+            </span>
+          )}
+          <span style={{ color: accentColor(accent) }}>●</span>
+        </div>
       </div>
       <div>
         <h3 className="font-display text-2xl md:text-3xl leading-tight text-[var(--text-primary)] max-w-[90%]">
@@ -83,6 +93,7 @@ const ProjectCard = ({ project, index, locale }) => {
             accent={project.accent}
             title={title}
             year={project.year}
+            ongoing={project.ongoing}
           />
         </div>
         {/* Back */}
@@ -109,14 +120,46 @@ const ProjectCard = ({ project, index, locale }) => {
                 </span>
               ))}
             </div>
-            <button
-              type="button"
-              onClick={() => setFlipped((f) => !f)}
-              data-testid={`project-flip-${project.id}`}
-              className="text-[11px] font-mono uppercase tracking-[0.3em] text-[var(--amber)]"
-            >
-              ← {locale === "fr" ? "Retour" : "Back"}
-            </button>
+
+            <div className="flex items-center justify-between gap-3 flex-wrap">
+              <div className="flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.25em]">
+                {project.demoUrl ? (
+                  <a
+                    href={project.demoUrl}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    data-testid={`project-demo-${project.id}`}
+                    className="text-[var(--amber)] hover:underline inline-flex items-center gap-1"
+                  >
+                    ↗ {locale === "fr" ? "Démo" : "Demo"}
+                  </a>
+                ) : null}
+                {project.sourceUrl ? (
+                  <a
+                    href={project.sourceUrl}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    data-testid={`project-source-${project.id}`}
+                    className="text-[var(--text-primary)] hover:text-[var(--amber)] inline-flex items-center gap-1"
+                  >
+                    ↗ {locale === "fr" ? "Source" : "Source"}
+                  </a>
+                ) : null}
+                {!project.demoUrl && !project.sourceUrl && (
+                  <span className="text-[var(--text-secondary)]">
+                    {locale === "fr" ? "Code sur demande" : "Code on request"}
+                  </span>
+                )}
+              </div>
+              <button
+                type="button"
+                onClick={() => setFlipped((f) => !f)}
+                data-testid={`project-flip-${project.id}`}
+                className="text-[11px] font-mono uppercase tracking-[0.3em] text-[var(--text-secondary)] hover:text-[var(--amber)] transition-colors"
+              >
+                ← {locale === "fr" ? "Retour" : "Back"}
+              </button>
+            </div>
           </div>
         </div>
       </div>

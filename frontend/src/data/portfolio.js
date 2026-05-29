@@ -185,82 +185,220 @@ export const SKILL_GROUP_COLORS = {
   ops: "#9A9490", // slate
 };
 
-// Projects from CV
+// Projects (from Ian's previous portfolio)
+const GH = "https://github.com/ianniboss";
+
 export const PROJECTS = [
   {
     id: "parking",
-    titleEn: "Parking Management System",
+    titleEn: "Parking Management Application",
     titleFr: "Application de gestion de parking",
     year: "2025",
-    typeEn: "Academic — team project",
-    typeFr: "Projet académique en équipe",
-    coverHue: 36, // amber
-    descEn:
-      "Designed a PL/SQL relational database and a Java desktop interface built with Eclipse WindowBuilder. Worked in SCRUM with a four-person team across a six-week sprint plan.",
-    descFr:
-      "Conception d'une base de données relationnelle PL/SQL et d'une interface Java avec Eclipse WindowBuilder. Collaboration en équipe de 4 selon la méthodologie SCRUM sur 6 semaines.",
-    stack: ["PL/SQL", "Java", "Eclipse", "WindowBuilder", "SCRUM"],
+    typeEn: "Academic — full-stack",
+    typeFr: "Projet académique — full-stack",
+    coverHue: 36,
     accent: "amber",
+    descEn:
+      "Full-stack parking system with real-time slot booking, automated fee calculation and role-based access. Solves overbooking and lost-revenue issues in manual parking. My role: database design, Java GUI with WindowBuilder, stored procedures, and SCRUM coordination.",
+    descFr:
+      "Système de parking full-stack : réservation de places en temps réel, calcul automatisé des frais et accès par rôles. Résout la sur-réservation et la perte de revenus du parking manuel. Mon rôle : conception BDD, IHM Java avec WindowBuilder, procédures stockées, coordination SCRUM.",
+    stack: ["Java", "PL/SQL", "SQL Developer", "Eclipse", "SCRUM"],
   },
   {
-    id: "agri-sales",
-    titleEn: "Agricultural Sales Manager",
-    titleFr: "Gestion des ventes — produits agricoles",
+    id: "apache-ssl",
+    titleEn: "Apache2 / SSL Server Administration",
+    titleFr: "Administration serveur Apache2 / SSL",
     year: "2025",
-    typeEn: "Academic project",
-    typeFr: "Projet académique",
+    typeEn: "System administration",
+    typeFr: "Administration système",
     coverHue: 170,
-    descEn:
-      "Java application managing stock and sales of agricultural products. Modelled the system architecture with UML diagrams in Modelio, then implemented the business logic and Swing-based UI.",
-    descFr:
-      "Application Java de gestion des stocks et des ventes de produits agricoles. Modélisation UML avec Modelio, puis implémentation de la logique métier et de l'IHM.",
-    stack: ["Java", "UML", "Modelio", "Swing"],
     accent: "teal",
+    descEn:
+      "Deployed and hardened an Apache2 server with SSL/TLS on Linux: virtual hosts, certificate setup and renewal, cipher-suite tuning, iptables firewall rules, SSH hardening and fail2ban.",
+    descFr:
+      "Déploiement et durcissement d'un serveur Apache2 avec SSL/TLS sous Linux : hôtes virtuels, certificats, renouvellement, suites cryptographiques, règles iptables, SSH durci et fail2ban.",
+    stack: ["Linux", "Apache2", "SSL/TLS", "iptables", "fail2ban"],
+  },
+  {
+    id: "web-doc",
+    titleEn: "Interactive Web Documentary",
+    titleFr: "Web-documentaire interactif",
+    year: "2025",
+    typeEn: "Web design — multimedia",
+    typeFr: "Web design — multimédia",
+    coverHue: 280,
+    accent: "purple",
+    descEn:
+      "Interactive multimedia documentary combining video, audio, responsive layouts and clickable storytelling. Explores how interactivity makes documentary content more engaging.",
+    descFr:
+      "Web-documentaire interactif mêlant vidéo, audio, mises en page responsive et narration cliquable. Explore comment l'interactivité rend le documentaire plus engageant.",
+    stack: ["HTML", "CSS", "JavaScript", "Web Design"],
+    demoUrl: "https://viewer.pandasuite.com/2kTY2xBI",
+  },
+  {
+    id: "tomato",
+    titleEn: "Tomato Sales Application",
+    titleFr: "Application de vente de tomates",
+    year: "2025",
+    typeEn: "Academic — desktop app · 1.5 months",
+    typeFr: "Projet académique — desktop · 1,5 mois",
+    coverHue: 12,
+    accent: "amber",
+    descEn:
+      "Desktop application to manage agricultural inventory and sales: UML architecture, Java Swing HMI, schema design, CRUD operations and responsive UI under heavy database reads.",
+    descFr:
+      "Application desktop de gestion de stock et de ventes agricoles : architecture UML, IHM Java Swing, schéma BDD, opérations CRUD et UI fluide même sous lecture intensive.",
+    stack: ["Java", "Swing", "Modelio", "UML", "SQL"],
+    sourceUrl: `${GH}/S201_TOMATES`,
   },
   {
     id: "lol-stats",
-    titleEn: "League of Legends Stats Dashboard",
+    titleEn: "League of Legends Statistics Dashboard",
     titleFr: "Tableau de bord stats League of Legends",
-    year: "2025",
-    typeEn: "Academic project",
-    typeFr: "Projet académique",
-    coverHue: 278,
+    year: "2024",
+    typeEn: "Academic — web app · 1 month",
+    typeFr: "Projet académique — web · 1 mois",
+    coverHue: 200,
+    accent: "teal",
     descEn:
-      "Analytics dashboard built on Oracle APEX. Analysed structured match datasets, designed views and charts, and shipped a usable, low-code data product.",
+      "Pulled Riot API match data into an Oracle APEX dashboard: API ingestion, schema design, complex SQL, rate-limit handling, JSON parsing, caching and correlation analysis on win factors.",
     descFr:
-      "Dashboard d'analyse construit sur Oracle APEX. Analyse de datasets structurés, conception de vues et de graphiques, livraison d'un produit data low-code utilisable.",
-    stack: ["Oracle APEX", "SQL", "Data viz"],
+      "Ingestion des matchs via Riot API dans un dashboard Oracle APEX : conception du schéma, SQL complexe, gestion du rate-limit, parsing JSON, cache et analyse des facteurs de victoire.",
+    stack: ["Oracle APEX", "SQL", "Riot API", "JSON"],
+  },
+  {
+    id: "graphs",
+    titleEn: "Algorithmic Exploration & Graph Theory",
+    titleFr: "Exploration algorithmique & théorie des graphes",
+    year: "2024",
+    typeEn: "R&D · 9 weeks",
+    typeFr: "R&D · 9 semaines",
+    coverHue: 278,
     accent: "purple",
+    descEn:
+      "Benchmarked and visualised pathfinding (Dijkstra, A*, Bellman-Ford) on large graphs. Implementations from scratch, matplotlib visualisations, memory-optimised adjacency lists and negative-cycle edge cases.",
+    descFr:
+      "Benchmark et visualisation de pathfinding (Dijkstra, A*, Bellman-Ford) sur de grands graphes. Implémentations from scratch, visualisation matplotlib, listes d'adjacence optimisées mémoire, gestion des cycles négatifs.",
+    stack: ["Python", "Algorithms", "Graph Theory", "matplotlib"],
+  },
+  {
+    id: "mh-students",
+    titleEn: "Malaysian Student Resource Hub",
+    titleFr: "Hub étudiants malaisiens en France",
+    year: "2025 · Ongoing",
+    typeEn: "Personal — full-stack",
+    typeFr: "Personnel — full-stack",
+    coverHue: 36,
+    accent: "amber",
+    descEn:
+      "Connects 500+ Malaysian students in France with events, admin guides, location services and real-time updates. React frontend, Firebase / Firestore backend, Google Maps integration and live sync.",
+    descFr:
+      "Connecte plus de 500 étudiants malaisiens en France via événements, guides administratifs, géolocalisation et mises à jour en temps réel. Front React, backend Firebase / Firestore, Google Maps et synchronisation live.",
+    stack: ["React", "Firebase", "Firestore", "Google Maps API"],
+    sourceUrl: `${GH}/malaysian-students-resource-hub`,
+    ongoing: true,
+  },
+  {
+    id: "trilingual",
+    titleEn: "Trilingual Translator",
+    titleFr: "Traducteur trilingue",
+    year: "2025",
+    typeEn: "AI — 2 weeks",
+    typeFr: "IA — 2 semaines",
+    coverHue: 170,
+    accent: "teal",
+    descEn:
+      "Real-time translator between Malay, English and French with simultaneous output. UI/UX, Gemini API integration, 300 ms debouncing, parallel calls, prompt engineering and rate-limiting.",
+    descFr:
+      "Traducteur temps réel entre malais, anglais et français avec sortie simultanée. UI/UX, intégration Gemini API, debouncing 300 ms, appels parallèles, prompt engineering et limitation de débit.",
+    stack: ["React", "Gemini API", "Tailwind CSS", "AI"],
+    sourceUrl: `${GH}/trilingue-translator`,
+  },
+  {
+    id: "captions",
+    titleEn: "Multi-language Caption Generator",
+    titleFr: "Générateur de légendes multilingue",
+    year: "2025",
+    typeEn: "AI — 1 week",
+    typeFr: "IA — 1 semaine",
+    coverHue: 280,
+    accent: "purple",
+    descEn:
+      "Generates social-media captions in Malay, English and French. Culturally-aware prompt design, platform-specific formatting and tonal nuance — built around the Gemini API.",
+    descFr:
+      "Génère des légendes pour réseaux sociaux en malais, anglais et français. Prompts culturellement adaptés, formatage par plateforme et nuance de ton — autour de l'API Gemini.",
+    stack: ["React", "Gemini API", "AI", "Content Gen"],
+    demoUrl: "https://ian-hosts.infinityfreeapp.com",
+    sourceUrl: `${GH}/Social-Media-Caption-Generator`,
   },
   {
     id: "weather-app",
-    titleEn: "Responsive Weather App",
-    titleFr: "Application météo responsive",
+    titleEn: "Weather Application",
+    titleFr: "Application météo",
     year: "2025",
-    typeEn: "Personal project",
-    typeFr: "Projet personnel",
+    typeEn: "Web app — 1 week",
+    typeFr: "Application web — 1 semaine",
     coverHue: 200,
-    descEn:
-      "Mobile-first React app consuming external weather APIs. Focus on perceived performance, caching, and a clean component-driven UI.",
-    descFr:
-      "Application React mobile-first consommant des APIs météo externes. Focus sur la performance perçue, le cache et une UI propre orientée composants.",
-    stack: ["React", "REST APIs", "Mobile-first"],
     accent: "teal",
+    descEn:
+      "Real-time weather and 5-day forecasts for any city. Mobile-first UI, dynamic icon mapping from condition codes and optimised payload handling.",
+    descFr:
+      "Météo en temps réel et prévisions 5 jours pour n'importe quelle ville. UI mobile-first, mapping dynamique des icônes selon les codes, payloads optimisés.",
+    stack: ["React", "OpenWeatherMap API", "Web Design"],
+    demoUrl: "https://weather-app-ian.vercel.app",
+    sourceUrl: `${GH}/weather-app`,
   },
   {
-    id: "isfinder",
-    titleEn: "Legacy → PHP 8.4 Migration (Internship)",
-    titleFr: "Migration legacy → PHP 8.4 (Stage)",
-    year: "2026",
-    typeEn: "Internship — ISFinder, Toulouse",
-    typeFr: "Stage — ISFinder, Toulouse",
-    coverHue: 36,
-    descEn:
-      "Migrating a production web application to PHP 8.4. Analysing compatibility issues, fixing breakages, and validating functionality on a real, long-lived code base.",
-    descFr:
-      "Migration d'une application web en production vers PHP 8.4. Analyse des problèmes de compatibilité, corrections, validation des fonctionnalités sur une base de code réelle et ancienne.",
-    stack: ["PHP 8.4", "Legacy migration", "Production"],
+    id: "ftm",
+    titleEn: "Football Team Manager",
+    titleFr: "Gestionnaire d'équipe de football",
+    year: "2025 · Ongoing",
+    typeEn: "Web application",
+    typeFr: "Application web",
+    coverHue: 12,
     accent: "amber",
+    descEn:
+      "Helps coaches manage players, matches, stats and performance trends. PHP MVC backend, MySQL schema with proper normalisation, indexed queries and a responsive stats dashboard.",
+    descFr:
+      "Aide les coachs à gérer joueurs, matchs, stats et tendances de performance. Backend PHP MVC, schéma MySQL normalisé, requêtes indexées et dashboard statistique responsive.",
+    stack: ["PHP", "MySQL", "CSS", "MVC"],
+    demoUrl: "http://ftm.wuaze.com",
+    sourceUrl: `${GH}/football-team-manager`,
+    ongoing: true,
+  },
+  {
+    id: "sonic",
+    titleEn: "Sonic Media Converter",
+    titleFr: "Sonic Media Converter",
+    year: "2025",
+    typeEn: "Media utility — 1 week",
+    typeFr: "Utilitaire média — 1 semaine",
+    coverHue: 36,
+    accent: "amber",
+    descEn:
+      "Fast media format converter with a Sonic-themed interface, queue management, conversion progress updates and a Node.js backend pipeline deployed on Vercel.",
+    descFr:
+      "Convertisseur média rapide à l'interface thème Sonic : gestion de file, progression en direct et pipeline backend Node.js déployé sur Vercel.",
+    stack: ["React", "Node.js", "Vercel"],
+    demoUrl: "https://sonic-mp3-converter.vercel.app",
+    sourceUrl: `${GH}/sonic-mp3-converter`,
+  },
+  {
+    id: "mario-notion",
+    titleEn: "Mario Notion Dashboard",
+    titleFr: "Tableau de bord Notion façon Mario",
+    year: "2025",
+    typeEn: "Productivity — 2 weeks",
+    typeFr: "Productivité — 2 semaines",
+    coverHue: 280,
+    accent: "purple",
+    descEn:
+      "Notion-powered productivity dashboard with a Mario-themed UI: tasks, goals and daily planning. Notion API sync, gamification and balance between retro visuals and usability.",
+    descFr:
+      "Dashboard de productivité branché sur Notion avec UI thème Mario : tâches, objectifs, planning quotidien. Synchronisation Notion API, gamification et équilibre entre visuels rétro et ergonomie.",
+    stack: ["React", "Notion API", "Tailwind CSS"],
+    demoUrl: "https://mario-notion.vercel.app",
+    sourceUrl: `${GH}/mario-notion`,
   },
 ];
 
