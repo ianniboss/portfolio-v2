@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-import axios from "axios";
 import { motion } from "framer-motion";
 import { useI18n } from "../context/I18nContext";
 import { PROFILE } from "../data/portfolio";
 import ContactParticles from "./ContactParticles";
 import ErrorBoundary from "./ErrorBoundary";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
+const FORMSPREE_ID = "xpqnenzg";
 
 const Contact = () => {
   const { t, locale } = useI18n();
@@ -21,12 +19,17 @@ const Contact = () => {
     setStatus("sending");
     setErrorMsg("");
     try {
-      await axios.post(`${API}/contact`, { ...form, locale });
+      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({ name: form.name, email: form.email, message: form.message, locale }),
+      });
+      if (!res.ok) throw new Error("formspree_error");
       setStatus("success");
       setForm({ name: "", email: "", message: "" });
     } catch (err) {
       setStatus("error");
-      setErrorMsg(err?.response?.data?.detail || t.contact.error);
+      setErrorMsg(t.contact.error);
     }
   };
 
