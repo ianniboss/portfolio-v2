@@ -16,14 +16,22 @@ const accentColor = (a) => {
   }
 };
 
-const ProjectCover = ({ hue, accent, title, year, ongoing }) => (
+const ProjectCover = ({ hue, accent, title, year, ongoing, imageUrl }) => (
   <div
-    className="relative w-full h-full overflow-hidden"
+    className="relative w-full h-full overflow-hidden group"
     style={{
       background:
         `radial-gradient(120% 80% at 80% 0%, hsla(${hue}, 55%, 38%, 0.45) 0%, hsla(${hue}, 50%, 18%, 0.45) 40%, #0A0F1A 100%), #141820`,
     }}
   >
+    {/* Styled Project Screenshot */}
+    {imageUrl && (
+      <img
+        src={imageUrl}
+        alt={title}
+        className="absolute inset-0 w-full h-full object-cover opacity-20 filter grayscale contrast-125 mix-blend-luminosity group-hover:opacity-35 transition-opacity duration-500"
+      />
+    )}
     {/* Pattern: dotted grid */}
     <div
       className="absolute inset-0 opacity-25"
@@ -94,6 +102,7 @@ const ProjectCard = ({ project, index, locale }) => {
             title={title}
             year={project.year}
             ongoing={project.ongoing}
+            imageUrl={project.image}
           />
         </div>
         {/* Back */}

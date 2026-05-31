@@ -198,6 +198,7 @@ export const PROJECTS = [
     typeFr: "Projet académique — full-stack",
     coverHue: 36,
     accent: "amber",
+    image: "/assets/projects/parking.png",
     descEn:
       "Full-stack parking system with real-time slot booking, automated fee calculation and role-based access. Solves overbooking and lost-revenue issues in manual parking. My role: database design, Java GUI with WindowBuilder, stored procedures, and SCRUM coordination.",
     descFr:
@@ -213,6 +214,7 @@ export const PROJECTS = [
     typeFr: "Administration système",
     coverHue: 170,
     accent: "teal",
+    image: "/assets/projects/apache_ssl.png",
     descEn:
       "Deployed and hardened an Apache2 server with SSL/TLS on Linux: virtual hosts, certificate setup and renewal, cipher-suite tuning, iptables firewall rules, SSH hardening and fail2ban.",
     descFr:
@@ -228,6 +230,7 @@ export const PROJECTS = [
     typeFr: "Web design — multimédia",
     coverHue: 280,
     accent: "purple",
+    image: "/assets/projects/web_doc.png",
     descEn:
       "Interactive multimedia documentary combining video, audio, responsive layouts and clickable storytelling. Explores how interactivity makes documentary content more engaging.",
     descFr:
@@ -244,6 +247,7 @@ export const PROJECTS = [
     typeFr: "Projet académique — desktop · 1,5 mois",
     coverHue: 12,
     accent: "amber",
+    image: "/assets/projects/tomato.png",
     descEn:
       "Desktop application to manage agricultural inventory and sales: UML architecture, Java Swing HMI, schema design, CRUD operations and responsive UI under heavy database reads.",
     descFr:
@@ -260,6 +264,7 @@ export const PROJECTS = [
     typeFr: "Projet académique — web · 1 mois",
     coverHue: 200,
     accent: "teal",
+    image: "/assets/projects/lol_stats.png",
     descEn:
       "Pulled Riot API match data into an Oracle APEX dashboard: API ingestion, schema design, complex SQL, rate-limit handling, JSON parsing, caching and correlation analysis on win factors.",
     descFr:
@@ -275,6 +280,7 @@ export const PROJECTS = [
     typeFr: "R&D · 9 semaines",
     coverHue: 278,
     accent: "purple",
+    image: "/assets/projects/graphs.png",
     descEn:
       "Benchmarked and visualised pathfinding (Dijkstra, A*, Bellman-Ford) on large graphs. Implementations from scratch, matplotlib visualisations, memory-optimised adjacency lists and negative-cycle edge cases.",
     descFr:
@@ -290,6 +296,7 @@ export const PROJECTS = [
     typeFr: "Personnel — full-stack",
     coverHue: 36,
     accent: "amber",
+    image: "/assets/projects/mh_students.png",
     descEn:
       "Connects 500+ Malaysian students in France with events, admin guides, location services and real-time updates. React frontend, Firebase / Firestore backend, Google Maps integration and live sync.",
     descFr:
@@ -307,6 +314,7 @@ export const PROJECTS = [
     typeFr: "IA — 2 semaines",
     coverHue: 170,
     accent: "teal",
+    image: "/assets/projects/trilingual.png",
     descEn:
       "Real-time translator between Malay, English and French with simultaneous output. UI/UX, Gemini API integration, 300 ms debouncing, parallel calls, prompt engineering and rate-limiting.",
     descFr:
@@ -323,6 +331,7 @@ export const PROJECTS = [
     typeFr: "IA — 1 semaine",
     coverHue: 280,
     accent: "purple",
+    image: "/assets/projects/captions.png",
     descEn:
       "Generates social-media captions in Malay, English and French. Culturally-aware prompt design, platform-specific formatting and tonal nuance — built around the Gemini API.",
     descFr:
@@ -340,6 +349,7 @@ export const PROJECTS = [
     typeFr: "Application web — 1 semaine",
     coverHue: 200,
     accent: "teal",
+    image: "/assets/projects/weather.png",
     descEn:
       "Real-time weather and 5-day forecasts for any city. Mobile-first UI, dynamic icon mapping from condition codes and optimised payload handling.",
     descFr:
@@ -357,6 +367,7 @@ export const PROJECTS = [
     typeFr: "Application web",
     coverHue: 12,
     accent: "amber",
+    image: "/assets/projects/football.png",
     descEn:
       "Helps coaches manage players, matches, stats and performance trends. PHP MVC backend, MySQL schema with proper normalisation, indexed queries and a responsive stats dashboard.",
     descFr:
@@ -375,6 +386,7 @@ export const PROJECTS = [
     typeFr: "Utilitaire média — 1 semaine",
     coverHue: 36,
     accent: "amber",
+    image: "/assets/projects/sonic.png",
     descEn:
       "Fast media format converter with a Sonic-themed interface, queue management, conversion progress updates and a Node.js backend pipeline deployed on Vercel.",
     descFr:
@@ -392,6 +404,7 @@ export const PROJECTS = [
     typeFr: "Productivité — 2 semaines",
     coverHue: 280,
     accent: "purple",
+    image: "/assets/projects/mario.png",
     descEn:
       "Notion-powered productivity dashboard with a Mario-themed UI: tasks, goals and daily planning. Notion API sync, gamification and balance between retro visuals and usability.",
     descFr:
