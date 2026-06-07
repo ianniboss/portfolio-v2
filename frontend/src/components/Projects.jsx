@@ -203,7 +203,7 @@ const Projects = () => {
       <div className="max-w-[1400px] mx-auto">
         <div className="flex items-end justify-between flex-wrap gap-6">
           <div>
-            <div className="eyebrow">/ 03 — {t.projects.eyebrow}</div>
+            <div className="eyebrow">/ 03 {t.projects.eyebrow}</div>
             <h2
               className="font-display mt-4 text-3xl md:text-5xl tracking-tight leading-[1.05] text-[var(--text-primary)] max-w-2xl"
               data-testid="projects-title"

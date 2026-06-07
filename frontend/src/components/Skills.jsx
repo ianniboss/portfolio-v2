@@ -130,7 +130,7 @@ const Skills = () => {
       <div className="max-w-[1400px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
           <div className="lg:col-span-4">
-            <div className="eyebrow">/ 02 — {t.skills.eyebrow}</div>
+            <div className="eyebrow">/ 02 {t.skills.eyebrow}</div>
             <h2
               className="font-display mt-4 text-3xl md:text-5xl tracking-tight leading-[1.05] text-[var(--text-primary)]"
               data-testid="skills-title"

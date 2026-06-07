@@ -32,7 +32,7 @@ const About = () => {
           variants={fadeUp}
           className="eyebrow"
         >
-          / 01 — {t.about.eyebrow}
+          / 01 {t.about.eyebrow}
         </motion.div>
 
         <div className="mt-10 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">

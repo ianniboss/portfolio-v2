@@ -55,7 +55,7 @@ const Contact = () => {
 
       <div className="relative z-10 max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
         <div className="lg:col-span-5">
-          <div className="eyebrow">/ 05 — {t.contact.eyebrow}</div>
+          <div className="eyebrow">/ 05 {t.contact.eyebrow}</div>
           <h2
             className="font-display mt-4 text-3xl md:text-5xl tracking-tight leading-[1.05] text-[var(--text-primary)]"
             data-testid="contact-title"

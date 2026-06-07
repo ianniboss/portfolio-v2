@@ -12,7 +12,7 @@ const Experience = () => {
       className="relative py-24 md:py-32 px-6 md:px-12 lg:px-20"
     >
       <div className="max-w-[1400px] mx-auto">
-        <div className="eyebrow">/ 04 — {t.experience.eyebrow}</div>
+        <div className="eyebrow">/ 04 {t.experience.eyebrow}</div>
         <h2 className="font-display mt-4 text-3xl md:text-5xl tracking-tight leading-[1.05] text-[var(--text-primary)] max-w-3xl">
           {t.experience.title}
         </h2>
