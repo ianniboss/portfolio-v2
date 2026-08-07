@@ -159,6 +159,7 @@ export const SKILLS = [
   // Languages
   { name: "Java", group: "lang", level: 0.9 },
   { name: "Python", group: "lang", level: 0.7 },
+  { name: "PHP", group: "lang", level: 0.7 },
   { name: "C", group: "lang", level: 0.6 },
   { name: "JavaScript", group: "lang", level: 0.75 },
   // Web
@@ -170,12 +171,15 @@ export const SKILLS = [
   { name: "SQL", group: "data", level: 0.85 },
   { name: "PL/SQL", group: "data", level: 0.75 },
   { name: "Oracle APEX", group: "data", level: 0.65 },
+  { name: "SQLite", group: "data", level: 0.7 },
   // DevOps / tools
   { name: "Linux", group: "ops", level: 0.7 },
   { name: "Git", group: "ops", level: 0.85 },
   { name: "Docker", group: "ops", level: 0.75 },
+  { name: "Apache2", group: "ops", level: 0.7 },
   { name: "SCRUM", group: "ops", level: 0.7 },
   { name: "UML", group: "ops", level: 0.7 },
+  { name: "AWS", group: "ops", level: 0.5 },
 ];
 
 export const SKILL_GROUP_COLORS = {
@@ -426,7 +430,7 @@ export const TIMELINE = [
     kind: "work",
   },
   {
-    period: "2023 to 2026",
+    period: "2023 to 2027",
     titleEn: "BUT Informatique",
     titleFr: "BUT Informatique",
     org: "IUT Paul Sabatier, Université Toulouse III",
