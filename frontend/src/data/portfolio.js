@@ -9,6 +9,8 @@ export const PROFILE = {
   github: "https://github.com/ianniboss",
   githubLabel: "ianniboss",
   linkedin: "https://www.linkedin.com/in/ian-bin-syahrul-azlan",
+  instagram: "https://www.instagram.com/iandelreyyy/",
+  discord: "https://discord.gg/fcTVw6pg",
   cv: "/assets/Ian_Bin_Syahrul_Azlan_CV.pdf",
   portrait: "/assets/ian-portrait.jpg",
 };
@@ -45,6 +47,7 @@ export const COPY = {
         { k: "Studying", v: "BUT Informatique · IUT Toulouse III" },
         { k: "Looking for", v: "Alternance, Sept 2026" },
         { k: "Based in", v: "Toulouse, FR" },
+        { k: "Interests", v: "Photography · Sports · Travel · Baking" },
       ],
     },
     skills: {
@@ -114,6 +117,7 @@ export const COPY = {
         { k: "Études", v: "BUT Informatique · IUT Toulouse III" },
         { k: "Recherche", v: "Alternance, sept 2026" },
         { k: "Basé à", v: "Toulouse, FR" },
+        { k: "Centres d'intérêt", v: "Photographie · Sport · Voyage · Pâtisserie" },
       ],
     },
     skills: {
@@ -427,6 +431,24 @@ export const TIMELINE = [
     org: "ISFinder Toulouse",
     descEn: "I migrate a legacy system to PHP 8.4 on a production codebase.",
     descFr: "Je migre un système existant vers PHP 8.4 en production.",
+    kind: "work",
+  },
+  {
+    period: "Ongoing",
+    titleEn: "South Regional Council",
+    titleFr: "Conseiller Régional Sud",
+    org: "MASAF (Malaysian Students' Movement in France)",
+    descEn: "I organized student and cultural events for the Malaysian community in France.",
+    descFr: "J'ai organisé des événements étudiants et culturels pour la communauté malaisienne en France.",
+    kind: "work",
+  },
+  {
+    period: "Ongoing",
+    titleEn: "Photographer",
+    titleFr: "Photographe",
+    org: "Malaysian Events in France",
+    descEn: "I produced photo reports for cultural and student events, showcasing community activities.",
+    descFr: "J'ai réalisé des reportages photo pour des événements culturels et étudiants, mettant en valeur les activités de la communauté.",
     kind: "work",
   },
   {
