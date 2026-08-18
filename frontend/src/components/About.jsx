@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Globe from "./Globe";
 import ErrorBoundary from "./ErrorBoundary";
 import { useI18n } from "../context/I18nContext";
+import { PROFILE } from "../data/portfolio";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -13,7 +14,7 @@ const fadeUp = {
   }),
 };
 
-const PORTRAIT_URL = "/assets/ian-portrait.jpg";
+const PORTRAIT_URL = PROFILE.portrait;
 
 const About = () => {
   const { t } = useI18n();
