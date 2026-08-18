@@ -170,7 +170,7 @@ class TestAdminDelete:
 # ---------- Static assets via REACT_APP_BACKEND_URL ----------
 class TestStaticAssets:
     def test_portrait_image_reachable(self):
-        r = requests.get(f"{BASE_URL}/assets/ianhirohito.png", timeout=15)
+        r = requests.get(f"{BASE_URL}/assets/photo_4_2026-01-14_23-51-13.jpg", timeout=15)
         assert r.status_code == 200, f"portrait unreachable: {r.status_code}"
         ctype = r.headers.get("content-type", "")
         assert "image" in ctype or len(r.content) > 1000

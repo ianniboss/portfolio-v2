@@ -12,7 +12,7 @@ export const PROFILE = {
   instagram: "https://www.instagram.com/iandelreyyy/",
   discord: "https://discord.gg/fcTVw6pg",
   cv: "/assets/Ian_Bin_Syahrul_Azlan_CV.pdf",
-  portrait: "/assets/ianhirohito.png",
+  portrait: "/assets/photo_4_2026-01-14_23-51-13.jpg",
 };
 
 export const COPY = {
