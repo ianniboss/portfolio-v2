@@ -29,7 +29,7 @@ export const COPY = {
       eyebrow: "Junior Developer in Toulouse, France",
       titleParts: ["Building", "between two worlds."],
       subtitle:
-        "I build with Java, web technologies, and DevOps tools. I seek an alternance starting September 2026. My schedule alternates one month in a company and one month at school.",
+        "I build with Java and web technologies. I seek a software development alternance starting September 2026. My schedule alternates one month in a company and one month at school.",
       cta_primary: "View projects",
       cta_secondary: "Get in touch",
       scroll: "Scroll to explore",
@@ -40,7 +40,7 @@ export const COPY = {
       paragraphs: [
         "I study computer science at IUT Paul Sabatier. I specialize in application development using Java, web stacks, and relational databases.",
         "I moved from Malaysia to France for my studies. I work with precision and follow methodical processes. I analyze systems to understand their inner mechanics.",
-        "I work as a Web Developer intern at ISFinder. I migrate a legacy application to PHP 8.4. I fix compatibility issues and validate changes on a production codebase."
+        "After a web development internship at CNRS (ISFinder), I aim to contribute to software modernization, web development, data processing, and application migration projects."
       ],
       facts: [
         { k: "Languages", v: "Malay · English (C2) · French (B2)" },
@@ -55,7 +55,7 @@ export const COPY = {
       title: "My tools.",
       subtitle:
         "Hover an orb to inspect the skill. Sizing reflects my usage frequency.",
-      groups: ["Languages", "Web", "Data", "DevOps"],
+      groups: ["Languages", "Web", "Data", "Systems & Tools"],
     },
     projects: {
       eyebrow: "Selected work",
@@ -71,7 +71,7 @@ export const COPY = {
       eyebrow: "Contact",
       title: "Let's talk.",
       subtitle:
-        "I seek a frontend, fullstack, or DevOps alternance starting September 2026. Send a message. I reply within one day.",
+        "I seek a software development alternance starting September 2026. Send a message. I reply within one day.",
       name: "Your name",
       email: "Your email",
       message: "Your message",
@@ -99,7 +99,7 @@ export const COPY = {
       eyebrow: "Développeur junior à Toulouse",
       titleParts: ["Construire", "entre deux mondes."],
       subtitle:
-        "Je développe en Java, web et DevOps. Je cherche une alternance dès septembre 2026. Mon rythme alterne un mois en entreprise et un mois à l'école.",
+        "Je développe en Java et technologies web. Je cherche une alternance en développement logiciel dès septembre 2026. Mon rythme alterne un mois en entreprise et un mois à l'école.",
       cta_primary: "Voir les projets",
       cta_secondary: "Me contacter",
       scroll: "Faire défiler",
@@ -110,7 +110,7 @@ export const COPY = {
       paragraphs: [
         "J'étudie l'informatique à l'IUT Paul Sabatier. Je me spécialise en développement d'applications avec Java, les technologies web et les bases de données.",
         "J'ai quitté la Malaisie pour étudier en France. Je travaille avec précision et méthode. J'analyse les systèmes pour comprendre leur fonctionnement.",
-        "Je travaille comme stagiaire développeur web chez ISFinder. Je migre une application legacy vers PHP 8.4. Je corrige des problèmes de compatibilité et valide le code en production."
+        "Après une expérience de développement au CNRS (ISFinder), je souhaite contribuer à des projets de modernisation logicielle, de développement web, de traitement de données et de migration d'applications."
       ],
       facts: [
         { k: "Langues", v: "Malais · Anglais (C2) · Français (B2)" },
@@ -125,7 +125,7 @@ export const COPY = {
       title: "Mes outils.",
       subtitle:
         "Survolez une sphère pour l'inspecter. La taille reflète ma fréquence d'utilisation.",
-      groups: ["Langages", "Web", "Données", "DevOps"],
+      groups: ["Langages", "Web", "Données", "Systèmes & Outils"],
     },
     projects: {
       eyebrow: "Sélection",
@@ -141,7 +141,7 @@ export const COPY = {
       eyebrow: "Contact",
       title: "Discutons.",
       subtitle:
-        "Je cherche une alternance frontend, fullstack ou DevOps dès septembre 2026. Envoyez un message. Je réponds sous un jour.",
+        "Je cherche une alternance en développement logiciel dès septembre 2026. Envoyez un message. Je réponds sous un jour.",
       name: "Votre nom",
       email: "Votre email",
       message: "Votre message",
@@ -428,9 +428,9 @@ export const TIMELINE = [
     period: "Apr 2026 to Jun 2026",
     titleEn: "Web Developer Intern",
     titleFr: "Stagiaire développeur web",
-    org: "ISFinder Toulouse",
-    descEn: "I migrate a legacy system to PHP 8.4 on a production codebase.",
-    descFr: "Je migre un système existant vers PHP 8.4 en production.",
+    org: "CNRS (ISFinder) Toulouse",
+    descEn: "I migrated a legacy system to PHP 8.4, fixed compatibility issues, and validated changes on a production codebase.",
+    descFr: "J'ai migré une application web legacy vers PHP 8.4, corrigé des problèmes de compatibilité et validé les fonctionnalités.",
     kind: "work",
   },
   {
