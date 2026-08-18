@@ -54,7 +54,7 @@ export const COPY = {
       eyebrow: "Skills",
       title: "My tools.",
       subtitle:
-        "Hover an orb to inspect the skill. Sizing reflects my usage frequency.",
+        "A breakdown of what I use most, by category.",
       groups: ["Languages", "Web", "Data", "Systems & Tools"],
     },
     projects: {
@@ -66,6 +66,7 @@ export const COPY = {
     experience: {
       eyebrow: "Experience",
       title: "My workplace and study history.",
+      communityHeading: "Community involvement",
     },
     contact: {
       eyebrow: "Contact",
@@ -124,7 +125,7 @@ export const COPY = {
       eyebrow: "Compétences",
       title: "Mes outils.",
       subtitle:
-        "Survolez une sphère pour l'inspecter. La taille reflète ma fréquence d'utilisation.",
+        "Un aperçu de ce que j'utilise le plus, par catégorie.",
       groups: ["Langages", "Web", "Données", "Systèmes & Outils"],
     },
     projects: {
@@ -136,6 +137,7 @@ export const COPY = {
     experience: {
       eyebrow: "Expérience",
       title: "Mes emplois et études.",
+      communityHeading: "Engagement associatif",
     },
     contact: {
       eyebrow: "Contact",
@@ -434,24 +436,6 @@ export const TIMELINE = [
     kind: "work",
   },
   {
-    period: "Ongoing",
-    titleEn: "South Regional Council",
-    titleFr: "Conseiller Régional Sud",
-    org: "MASAF (Malaysian Students' Movement in France)",
-    descEn: "I organized student and cultural events for the Malaysian community in France.",
-    descFr: "J'ai organisé des événements étudiants et culturels pour la communauté malaisienne en France.",
-    kind: "work",
-  },
-  {
-    period: "Ongoing",
-    titleEn: "Photographer",
-    titleFr: "Photographe",
-    org: "Malaysian Events in France",
-    descEn: "I produced photo reports for cultural and student events, showcasing community activities.",
-    descFr: "J'ai réalisé des reportages photo pour des événements culturels et étudiants, mettant en valeur les activités de la communauté.",
-    kind: "work",
-  },
-  {
     period: "2023 to 2027",
     titleEn: "BUT Informatique",
     titleFr: "BUT Informatique",
@@ -477,5 +461,24 @@ export const TIMELINE = [
     descEn: "I earned my national secondary diploma with 9A+.",
     descFr: "J'ai obtenu mon diplôme secondaire national avec mention.",
     kind: "edu",
+  },
+];
+
+export const COMMUNITY = [
+  {
+    period: "2024 to Jul 2025",
+    titleEn: "South Regional Council",
+    titleFr: "Conseiller Régional Sud",
+    org: "MASAF (Malaysian Students' Movement in France)",
+    descEn: "I organized student and cultural events for the Malaysian community in France.",
+    descFr: "J'ai organisé des événements étudiants et culturels pour la communauté malaisienne en France.",
+  },
+  {
+    period: "2023 to 2025",
+    titleEn: "Photographer",
+    titleFr: "Photographe",
+    org: "Malaysian Events in France",
+    descEn: "I produced photo reports for cultural and student events, showcasing community activities.",
+    descFr: "J'ai réalisé des reportages photo pour des événements culturels et étudiants, mettant en valeur les activités de la communauté.",
   },
 ];
