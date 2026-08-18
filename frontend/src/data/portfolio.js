@@ -38,9 +38,9 @@ export const COPY = {
       eyebrow: "About",
       title: "I bring a dual-culture perspective to development.",
       paragraphs: [
-        "I study computer science at IUT Paul Sabatier. I specialize in application development using Java, web stacks, and relational databases.",
-        "I moved from Malaysia to France for my studies. I work with precision and follow methodical processes. I analyze systems to understand their inner mechanics.",
-        "After a web development internship at CNRS (ISFinder), I aim to contribute to software modernization, web development, data processing, and application migration projects."
+        "I'm a third-year BUT Informatique student at IUT Paul Sabatier, and a JPA (Malaysian Public Service Department) scholarship holder. I'm drawn to software development and application design — understanding how a system holds together end to end.",
+        "My coursework has taken me through PHP, Java, Python, JavaScript, and SQL, working with Git, Docker, and Linux along the way. Moving from Malaysia to France taught me to adapt fast, to new systems and new teams alike.",
+        "At CNRS's Centre de Biologie Intégrative, I worked on ISfinder, a research-facing web tool — migrating and modernizing an existing PHP application to PHP 8, fixing compatibility issues, and working directly with the database in an active research environment.",
       ],
       facts: [
         { k: "Languages", v: "Malay · English (C2) · French (B2)" },
@@ -109,9 +109,9 @@ export const COPY = {
       eyebrow: "À propos",
       title: "Un développeur avec une double culture.",
       paragraphs: [
-        "J'étudie l'informatique à l'IUT Paul Sabatier. Je me spécialise en développement d'applications avec Java, les technologies web et les bases de données.",
-        "J'ai quitté la Malaisie pour étudier en France. Je travaille avec précision et méthode. J'analyse les systèmes pour comprendre leur fonctionnement.",
-        "Après une expérience de développement au CNRS (ISFinder), je souhaite contribuer à des projets de modernisation logicielle, de développement web, de traitement de données et de migration d'applications."
+        "Étudiant en troisième année de BUT Informatique à l'IUT Paul Sabatier, et boursier de la JPA (Jabatan Perkhidmatan Awam Malaysia), je m'intéresse au développement logiciel et à la conception d'applications — comprendre comment un système tient debout de bout en bout.",
+        "Ma formation m'a fait travailler avec PHP, Java, Python, JavaScript et SQL, ainsi que Git, Docker et Linux. Le passage de la Malaisie à la France m'a appris à m'adapter vite, à de nouveaux systèmes comme à de nouvelles équipes.",
+        "Au CNRS, au Centre de Biologie Intégrative, j'ai travaillé sur ISfinder, un outil web utilisé en contexte de recherche — migration et modernisation d'une application PHP existante vers PHP 8, résolution de problèmes de compatibilité, et manipulation directe de la base de données dans un environnement de recherche actif.",
       ],
       facts: [
         { k: "Langues", v: "Malais · Anglais (C2) · Français (B2)" },
