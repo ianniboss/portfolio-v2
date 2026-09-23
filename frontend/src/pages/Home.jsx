@@ -22,7 +22,7 @@ const Marquee = () => {
     "PL/SQL",
     "Oracle APEX",
     "Toulouse → World",
-    "Alternance · Sept 2026",
+    "Alternance · Oct 2026",
   ];
   return (
     <div

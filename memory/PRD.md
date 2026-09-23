@@ -1,7 +1,7 @@
 # Ian Bin Syahrul Azlan — 3D Dynamic Portfolio
 
 ## Original problem statement
-Build Ian's 3D dynamic developer portfolio (junior dev, Malaysia → Toulouse, seeking alternance Sept 2026). Theme: "developer from two worlds". Stack adapted to Emergent platform: CRA (JS) + FastAPI + MongoDB.
+Build Ian's 3D dynamic developer portfolio (junior dev, Malaysia → Toulouse, seeking alternance Oct 2026). Theme: "developer from two worlds". Stack adapted to Emergent platform: CRA (JS) + FastAPI + MongoDB.
 
 ## Architecture (current)
 - **Backend** (`/app/backend/server.py`): FastAPI exposing `/api/`, `/api/contact` (POST/GET), `/api/admin/login`, `/api/admin/contact`, `/api/admin/stats`, `/api/admin/contact/{id}` (DELETE). Admin endpoints guarded by `x-admin-token` header against `ADMIN_TOKEN` in `.env`.

@@ -29,7 +29,7 @@ export const COPY = {
       eyebrow: "Junior Developer in Toulouse, France",
       titleParts: ["Building", "between two worlds."],
       subtitle:
-        "I build with Java and web technologies. I seek a software development alternance starting September 2026. My schedule alternates one month in a company and one month at school.",
+        "I build with Java and web technologies. I seek a software development alternance starting October 2026. My schedule alternates one month in a company and one month at school.",
       cta_primary: "View projects",
       cta_secondary: "Get in touch",
       scroll: "Scroll to explore",
@@ -45,7 +45,7 @@ export const COPY = {
       facts: [
         { k: "Languages", v: "Malay · English (C2) · French (B2)" },
         { k: "Studying", v: "BUT Informatique · IUT Toulouse III" },
-        { k: "Looking for", v: "Alternance, Sept 2026" },
+        { k: "Looking for", v: "Alternance, Oct 2026" },
         { k: "Based in", v: "Toulouse, FR" },
         { k: "Interests", v: "Photography · Sports · Travel · Baking" },
       ],
@@ -72,7 +72,7 @@ export const COPY = {
       eyebrow: "Contact",
       title: "Let's talk.",
       subtitle:
-        "I seek a software development alternance starting September 2026. Send a message. I reply within one day.",
+        "I seek a software development alternance starting October 2026. Send a message. I reply within one day.",
       name: "Your name",
       email: "Your email",
       message: "Your message",
@@ -100,7 +100,7 @@ export const COPY = {
       eyebrow: "Développeur junior à Toulouse",
       titleParts: ["Construire", "entre deux mondes."],
       subtitle:
-        "Je développe en Java et technologies web. Je cherche une alternance en développement logiciel dès septembre 2026. Mon rythme alterne un mois en entreprise et un mois à l'école.",
+        "Je développe en Java et technologies web. Je cherche une alternance en développement logiciel dès octobre 2026. Mon rythme alterne un mois en entreprise et un mois à l'école.",
       cta_primary: "Voir les projets",
       cta_secondary: "Me contacter",
       scroll: "Faire défiler",
@@ -116,7 +116,7 @@ export const COPY = {
       facts: [
         { k: "Langues", v: "Malais · Anglais (C2) · Français (B2)" },
         { k: "Études", v: "BUT Informatique · IUT Toulouse III" },
-        { k: "Recherche", v: "Alternance, sept 2026" },
+        { k: "Recherche", v: "Alternance, oct 2026" },
         { k: "Basé à", v: "Toulouse, FR" },
         { k: "Centres d'intérêt", v: "Photographie · Sport · Voyage · Pâtisserie" },
       ],
@@ -143,7 +143,7 @@ export const COPY = {
       eyebrow: "Contact",
       title: "Discutons.",
       subtitle:
-        "Je cherche une alternance en développement logiciel dès septembre 2026. Envoyez un message. Je réponds sous un jour.",
+        "Je cherche une alternance en développement logiciel dès octobre 2026. Envoyez un message. Je réponds sous un jour.",
       name: "Votre nom",
       email: "Votre email",
       message: "Votre message",
