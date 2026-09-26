@@ -78,6 +78,13 @@ const Contact = () => {
               ↗ {PROFILE.email}
             </a>
             <a
+              data-testid="contact-email-university"
+              href={`mailto:${PROFILE.emailUniversity}`}
+              className="block text-[var(--text-primary)] hover:text-[var(--amber)] transition-colors"
+            >
+              ↗ {PROFILE.emailUniversity}
+            </a>
+            <a
               data-testid="contact-phone"
               href={`tel:${PROFILE.phone.replace(/\s/g, "")}`}
               className="block text-[var(--text-primary)] hover:text-[var(--amber)] transition-colors"

@@ -4,6 +4,7 @@ export const PROFILE = {
   shortName: "Ian S. Azlan",
   initials: "I.S.A",
   email: "ianhafiz9999@gmail.com",
+  emailUniversity: "ian.bin-syahrul-azlan@utoulouse.fr",
   phone: "+33 7 44 43 99 59",
   location: "Toulouse, France",
   github: "https://github.com/ianniboss",
@@ -29,7 +30,7 @@ export const COPY = {
       eyebrow: "Junior Developer in Toulouse, France",
       titleParts: ["Building", "between two worlds."],
       subtitle:
-        "I build with Java and web technologies. I seek a software development alternance starting October 2026. My schedule alternates one month in a company and one month at school.",
+        "I build with Java and web technologies. I seek a software development alternance starting October 12, 2026 (flexible up to November 30, 2026). My schedule alternates one month in a company and one month at school.",
       cta_primary: "View projects",
       cta_secondary: "Get in touch",
       scroll: "Scroll to explore",
@@ -40,12 +41,12 @@ export const COPY = {
       paragraphs: [
         "I'm a third-year BUT Informatique student at IUT Paul Sabatier, and a JPA (Malaysian Public Service Department) scholarship holder. I'm drawn to software development and application design - understanding how a system holds together end to end.",
         "My coursework has taken me through PHP, Java, Python, JavaScript, and SQL, working with Git, Docker, and Linux along the way. Moving from Malaysia to France taught me to adapt fast, to new systems and new teams alike.",
-        "At CNRS's Centre de Biologie Intégrative, I worked on ISfinder, a research-facing web tool - migrating and modernizing an existing PHP application to PHP 8, fixing compatibility issues, and working directly with the database in an active research environment.",
+        "During a 12-week internship at CNRS's Centre de Biologie Intégrative, I worked on ISfinder, a research-facing web tool - migrating and modernizing an existing PHP application to PHP 8, fixing compatibility issues, and working directly with the database in an active research environment.",
       ],
       facts: [
         { k: "Languages", v: "Malay · English (C2) · French (B2)" },
         { k: "Studying", v: "BUT Informatique · IUT Toulouse III" },
-        { k: "Looking for", v: "Alternance, Oct 2026" },
+        { k: "Looking for", v: "Alternance, starting Oct 12, 2026 (flexible to Nov 30, 2026)" },
         { k: "Based in", v: "Toulouse, FR" },
         { k: "Interests", v: "Photography · Sports · Travel · Baking" },
       ],
@@ -72,7 +73,7 @@ export const COPY = {
       eyebrow: "Contact",
       title: "Let's talk.",
       subtitle:
-        "I seek a software development alternance starting October 2026. Send a message. I reply within one day.",
+        "I seek a software development alternance starting October 12, 2026 (flexible up to November 30, 2026). Send a message. I reply within one day.",
       name: "Your name",
       email: "Your email",
       message: "Your message",
@@ -81,6 +82,7 @@ export const COPY = {
       success: "Message sent. I will reply soon.",
       error: "An error occurred. Please try again or email me.",
       or: "Or reach me directly",
+      emailUniversity: "ian.bin-syahrul-azlan@utoulouse.fr",
     },
     footer: {
       built: "Designed and built by Ian with React, Three.js, and FastAPI.",
@@ -100,7 +102,7 @@ export const COPY = {
       eyebrow: "Développeur junior à Toulouse",
       titleParts: ["Construire", "entre deux mondes."],
       subtitle:
-        "Je développe en Java et technologies web. Je cherche une alternance en développement logiciel dès octobre 2026. Mon rythme alterne un mois en entreprise et un mois à l'école.",
+        "Je développe en Java et technologies web. Je cherche une alternance en développement logiciel à partir du 12 octobre 2026 (démarrage flexible jusqu'au 30 novembre 2026). Mon rythme alterne un mois en entreprise et un mois à l'école.",
       cta_primary: "Voir les projets",
       cta_secondary: "Me contacter",
       scroll: "Faire défiler",
@@ -111,12 +113,12 @@ export const COPY = {
       paragraphs: [
         "Étudiant en troisième année de BUT Informatique à l'IUT Paul Sabatier, et boursier de la JPA (Jabatan Perkhidmatan Awam Malaysia), je m'intéresse au développement logiciel et à la conception d'applications - comprendre comment un système tient debout de bout en bout.",
         "Ma formation m'a fait travailler avec PHP, Java, Python, JavaScript et SQL, ainsi que Git, Docker et Linux. Le passage de la Malaisie à la France m'a appris à m'adapter vite, à de nouveaux systèmes comme à de nouvelles équipes.",
-        "Au CNRS, au Centre de Biologie Intégrative, j'ai travaillé sur ISfinder, un outil web utilisé en contexte de recherche - migration et modernisation d'une application PHP existante vers PHP 8, résolution de problèmes de compatibilité, et manipulation directe de la base de données dans un environnement de recherche actif.",
+        "Lors d'un stage de 12 semaines au CNRS, au Centre de Biologie Intégrative, j'ai travaillé sur ISfinder, un outil web utilisé en contexte de recherche - migration et modernisation d'une application PHP existante vers PHP 8, résolution de problèmes de compatibilité, et manipulation directe de la base de données dans un environnement de recherche actif.",
       ],
       facts: [
         { k: "Langues", v: "Malais · Anglais (C2) · Français (B2)" },
         { k: "Études", v: "BUT Informatique · IUT Toulouse III" },
-        { k: "Recherche", v: "Alternance, oct 2026" },
+        { k: "Recherche", v: "Alternance, dès le 12 oct 2026 (flexible jusqu'au 30 nov 2026)" },
         { k: "Basé à", v: "Toulouse, FR" },
         { k: "Centres d'intérêt", v: "Photographie · Sport · Voyage · Pâtisserie" },
       ],
@@ -143,7 +145,7 @@ export const COPY = {
       eyebrow: "Contact",
       title: "Discutons.",
       subtitle:
-        "Je cherche une alternance en développement logiciel dès octobre 2026. Envoyez un message. Je réponds sous un jour.",
+        "Je cherche une alternance en développement logiciel à partir du 12 octobre 2026 (démarrage flexible jusqu'au 30 novembre 2026). Envoyez un message. Je réponds sous un jour.",
       name: "Votre nom",
       email: "Votre email",
       message: "Votre message",
@@ -152,6 +154,7 @@ export const COPY = {
       success: "Message envoyé. Je réponds vite.",
       error: "Une erreur est survenue. Réessayez ou écrivez-moi.",
       or: "Ou contactez-moi directement",
+      emailUniversity: "ian.bin-syahrul-azlan@utoulouse.fr",
     },
     footer: {
       built: "Conçu et développé par Ian avec React, Three.js, et FastAPI.",
@@ -178,6 +181,7 @@ export const SKILLS = [
   { name: "PL/SQL", group: "data", level: 0.75 },
   { name: "Oracle APEX", group: "data", level: 0.65 },
   { name: "SQLite", group: "data", level: 0.7 },
+  { name: "MariaDB", group: "data", level: 0.7 },
   // DevOps / tools
   { name: "Linux", group: "ops", level: 0.7 },
   { name: "Git", group: "ops", level: 0.85 },
@@ -201,8 +205,8 @@ const GH = "https://github.com/ianniboss";
 export const PROJECTS = [
   {
     id: "parking",
-    titleEn: "Parking Management Application",
-    titleFr: "Application de gestion de parking",
+    titleEn: "Se Garer Sur Toulouse",
+    titleFr: "Se Garer Sur Toulouse",
     year: "2025",
     typeEn: "Academic full-stack",
     typeFr: "Projet académique full-stack",
@@ -267,8 +271,8 @@ export const PROJECTS = [
   },
   {
     id: "lol-stats",
-    titleEn: "League of Legends Statistics Dashboard",
-    titleFr: "Tableau de bord stats League of Legends",
+    titleEn: "Data Analysis & Visualization Dashboard",
+    titleFr: "Application d'analyse et de visualisation de données",
     year: "2024",
     typeEn: "Academic web app",
     typeFr: "Projet académique web",
@@ -276,9 +280,9 @@ export const PROJECTS = [
     accent: "teal",
     image: "/assets/projects/lol_stats.png",
     descEn:
-      "I integrated Riot API match data into an Oracle APEX dashboard. I handled API ingestion, schema design, complex SQL queries, rate limits, JSON parsing, and correlation analysis.",
+      "I built an Oracle APEX dashboard for structured data analysis and visualization. I handled API data ingestion, schema design, complex SQL queries, rate limits, JSON parsing, and correlation analysis.",
     descFr:
-      "J'ai intégré les données de la Riot API dans un dashboard Oracle APEX. J'ai géré l'ingestion API, le schéma, les requêtes SQL, les limites de requêtes, le parsing JSON et l'analyse de corrélation.",
+      "J'ai développé un tableau de bord Oracle APEX pour l'analyse et la visualisation de données structurées. J'ai géré l'ingestion de données API, le schéma, les requêtes SQL complexes, les limites de requêtes, le parsing JSON et l'analyse de corrélation.",
     stack: ["Oracle APEX", "SQL", "Riot API", "JSON"],
   },
   {
@@ -352,8 +356,8 @@ export const PROJECTS = [
   },
   {
     id: "weather-app",
-    titleEn: "Weather Application",
-    titleFr: "Application météo",
+    titleEn: "WeatherNow",
+    titleFr: "WeatherNow",
     year: "2025",
     typeEn: "Web application",
     typeFr: "Application web",
@@ -428,11 +432,11 @@ export const PROJECTS = [
 export const TIMELINE = [
   {
     period: "Apr 2026 to Jun 2026",
-    titleEn: "Web Developer Intern",
-    titleFr: "Stagiaire développeur web",
+    titleEn: "Web Developer Intern (12 weeks)",
+    titleFr: "Stagiaire développeur web (12 semaines)",
     org: "CNRS (ISFinder) Toulouse",
-    descEn: "I migrated a legacy system to PHP 8.4, fixed compatibility issues, and validated changes on a production codebase.",
-    descFr: "J'ai migré une application web legacy vers PHP 8.4, corrigé des problèmes de compatibilité et validé les fonctionnalités.",
+    descEn: "During a 12-week internship at CNRS's Centre de Biologie Intégrative, I migrated a legacy system to PHP 8.4, fixed compatibility issues, and validated changes on a production codebase.",
+    descFr: "Lors d'un stage de 12 semaines au CNRS, au Centre de Biologie Intégrative, j'ai migré une application web legacy vers PHP 8.4, corrigé des problèmes de compatibilité et validé les fonctionnalités.",
     kind: "work",
   },
   {
