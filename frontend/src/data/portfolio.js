@@ -58,6 +58,11 @@ export const COPY = {
         "A breakdown of what I use most, by category.",
       groups: ["Languages", "Web", "Data", "Systems & Tools"],
     },
+    internship: {
+      eyebrow: "Internship",
+      title: "12 weeks at CNRS.",
+      subtitle: "A deep dive into my first professional experience — migrating ISfinder at the Centre de Biologie Intégrative.",
+    },
     projects: {
       eyebrow: "Selected work",
       title: "My projects.",
@@ -129,6 +134,11 @@ export const COPY = {
       subtitle:
         "Un aperçu de ce que j'utilise le plus, par catégorie.",
       groups: ["Langages", "Web", "Données", "Systèmes & Outils"],
+    },
+    internship: {
+      eyebrow: "Stage",
+      title: "12 semaines au CNRS.",
+      subtitle: "Un regard approfondi sur ma première expérience professionnelle — la migration d'ISfinder au Centre de Biologie Intégrative.",
     },
     projects: {
       eyebrow: "Sélection",
@@ -484,5 +494,93 @@ export const COMMUNITY = [
     org: "Malaysian Events in France",
     descEn: "I produced photo reports for cultural and student events, showcasing community activities.",
     descFr: "J'ai réalisé des reportages photo pour des événements culturels et étudiants, mettant en valeur les activités de la communauté.",
+  },
+];
+
+/**
+ * Internship section — narrative beats for the Scroll Expansion Hero section.
+ *
+ * IMAGE PLACEHOLDERS:
+ *   Drop your real photos into  public/assets/internship/  using these filenames:
+ *     01-the-place.jpg       — Photo of CBI / CNRS building
+ *     02-the-problem.png     — Screenshot of the legacy app / codebase
+ *     03-the-pivot.jpg       — Planning / whiteboard / pivot moment photo
+ *     04-hardening.jpg       — Code / debugging / public-site work photo
+ *     05-admin-tools.jpg     — Admin interface / tools screenshot or photo
+ *     06-design-touch.jpg    — Card carousel redesign or closing photo
+ *   The component references these paths directly — no code changes needed.
+ */
+export const INTERNSHIP_BEATS = [
+  {
+    id: "the-place",
+    image: "/assets/internship/01-the-place.jpg",
+    accent: "teal",
+    date: "Apr 2026",
+    titleEn: "The place",
+    titleFr: "Le lieu",
+    textEn:
+      "Twelve weeks at CNRS\u2019s Centre de Biologie Int\u00e9grative in Toulouse, under Patricia Siguier, on ISfinder \u2014 a research platform cataloguing insertion sequences in genomic data. I started by reading: comparing PHP 8.0 and 8.2 versions of the codebase and mapping how the public site (ISfinder), the submission tool (ISsubmit), and the internal admin interface (ISadmin) actually connected.",
+    textFr:
+      "Douze semaines au Centre de Biologie Int\u00e9grative du CNRS \u00e0 Toulouse, sous la tutelle de Patricia Siguier, sur ISfinder \u2014 une plateforme de recherche cataloguant des s\u00e9quences d\u2019insertion dans des donn\u00e9es g\u00e9nomiques. J\u2019ai commenc\u00e9 par lire : comparer les versions PHP 8.0 et 8.2 du code, comprendre comment le site public (ISfinder), l\u2019outil de soumission (ISsubmit) et l\u2019interface d\u2019administration (ISadmin) communiquaient r\u00e9ellement.",
+  },
+  {
+    id: "the-problem",
+    image: "/assets/internship/02-the-problem.png",
+    accent: "amber",
+    date: "Week 1",
+    titleEn: "The problem",
+    titleFr: "Le probl\u00e8me",
+    textEn:
+      "A week in, a review with Patricia and Jocelyne surfaced something more serious than a compatibility warning: external submission forms were writing directly into the internal production database \u2014 a real risk for a platform other researchers depend on.",
+    textFr:
+      "Une semaine plus tard, une r\u00e9union avec Patricia et Jocelyne a fait remonter quelque chose de plus s\u00e9rieux qu\u2019un avertissement de compatibilit\u00e9 : les formulaires de soumission externes \u00e9crivaient directement dans la base de production interne \u2014 un vrai risque pour une plateforme dont d\u00e9pendent d\u2019autres chercheurs.",
+  },
+  {
+    id: "the-pivot",
+    image: "/assets/internship/03-the-pivot.jpg",
+    accent: "purple",
+    date: "Week 2",
+    titleEn: "The pivot",
+    titleFr: "Le pivot",
+    textEn:
+      "The plan became: isolate a new ISsubmit database on the external server, and \u2014 on Patricia and Pierre\u2019s advice \u2014 push the migration target further, from PHP 8.4 to PHP 8.5, for a codebase built to last.",
+    textFr:
+      "Le plan est devenu : isoler une nouvelle base ISsubmit sur le serveur externe, et, sur les conseils de Patricia et Pierre, pousser l\u2019objectif de migration plus loin, de PHP 8.4 \u00e0 PHP 8.5, pour un code pens\u00e9 pour durer.",
+  },
+  {
+    id: "hardening",
+    image: "/assets/internship/04-hardening.jpg",
+    accent: "teal",
+    date: "Apr\u2013Jun 2026",
+    titleEn: "Hardening the public site",
+    titleFr: "Fiabiliser le site public",
+    textEn:
+      "I fixed the fatal errors PHP 8.5 introduced \u2014 missing-variable checks, session ID sanitization, null-safe database inserts \u2014 then modernized the BLAST search module so it no longer depended on hardcoded absolute paths, and rebuilt the CAPTCHA system from scratch so a failed check no longer wiped out what a user had already typed.",
+    textFr:
+      "J\u2019ai corrig\u00e9 les erreurs fatales introduites par PHP 8.5 \u2014 v\u00e9rification des variables manquantes, nettoyage des identifiants de session, insertions en base s\u00e9curis\u00e9es \u2014 puis modernis\u00e9 le module de recherche BLAST pour qu\u2019il ne d\u00e9pende plus de chemins absolus cod\u00e9s en dur, et enti\u00e8rement reconstruit le syst\u00e8me de CAPTCHA pour qu\u2019un \u00e9chec de validation n\u2019efface plus la saisie d\u00e9j\u00e0 faite par l\u2019utilisateur.",
+  },
+  {
+    id: "admin-tools",
+    image: "/assets/internship/05-admin-tools.jpg",
+    accent: "amber",
+    date: "May\u2013Jun 2026",
+    titleEn: "Building for the admin side",
+    titleFr: "Construire c\u00f4t\u00e9 administration",
+    textEn:
+      "Beyond the public site, I shipped four tools for the internal ISadmin interface: a CSV export tool locked to read-only queries (blocking any accidental UPDATE/DELETE), a reference-management screen that stops you from deleting a category still in use, an incomplete-record detector so nothing falls through the cracks mid-submission, and quick-action deletion buttons that preserve linked records instead of orphaning them.",
+    textFr:
+      "Au-del\u00e0 du site public, j\u2019ai livr\u00e9 quatre outils pour l\u2019interface interne ISadmin : un export CSV verrouill\u00e9 aux requ\u00eates de lecture seule (bloquant tout UPDATE/DELETE accidentel), un \u00e9cran de gestion des r\u00e9f\u00e9rences emp\u00eachant la suppression d\u2019une cat\u00e9gorie encore utilis\u00e9e, un d\u00e9tecteur de fiches incompl\u00e8tes pour qu\u2019aucune soumission ne passe entre les mailles du filet, et des boutons de suppression rapide pr\u00e9servant les enregistrements li\u00e9s plut\u00f4t que de les rendre orphelins.",
+  },
+  {
+    id: "design-touch",
+    image: "/assets/internship/06-design-touch.jpg",
+    accent: "purple",
+    date: "Jun 2026",
+    titleEn: "A design touch, and what it taught me",
+    titleFr: "Une touche design, et ce que \u00e7a m\u2019a appris",
+    textEn:
+      "I also proposed and shipped a redesign of the platform\u2019s resource-links page into a card carousel, spotlighting the databases researchers reach for most. Twelve weeks in someone else\u2019s production code, on a real research team, taught me that \u201cmodernize this\u201d almost always means finding the actual problem first \u2014 and that\u2019s what I\u2019m looking to build on in an alternance.",
+    textFr:
+      "J\u2019ai aussi propos\u00e9 et livr\u00e9 une refonte de la page de liens de la plateforme sous forme de carrousel de cartes, mettant en avant les bases de donn\u00e9es les plus consult\u00e9es par les chercheurs. Douze semaines dans le code de production de quelqu\u2019un d\u2019autre, au sein d\u2019une v\u00e9ritable \u00e9quipe de recherche, m\u2019ont appris que \u00ab moderniser \u00bb signifie presque toujours trouver le vrai probl\u00e8me avant tout \u2014 et c\u2019est sur cette base que je veux continuer \u00e0 construire en alternance.",
   },
 ];
