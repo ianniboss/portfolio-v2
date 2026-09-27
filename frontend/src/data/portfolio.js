@@ -445,8 +445,8 @@ export const TIMELINE = [
     titleEn: "Web Developer Intern (12 weeks)",
     titleFr: "Stagiaire développeur web (12 semaines)",
     org: "CNRS (ISFinder) Toulouse",
-    descEn: "During a 12-week internship at CNRS's Centre de Biologie Intégrative, I migrated a legacy system to PHP 8.4, fixed compatibility issues, and validated changes on a production codebase.",
-    descFr: "Lors d'un stage de 12 semaines au CNRS, au Centre de Biologie Intégrative, j'ai migré une application web legacy vers PHP 8.4, corrigé des problèmes de compatibilité et validé les fonctionnalités.",
+    descEn: "During a 12-week internship at CNRS's Centre de Biologie Intégrative, I migrated ISfinder and ISadmin to PHP 8.5, identified and isolated a critical database architecture risk, and shipped four internal admin tools.",
+    descFr: "Lors d'un stage de 12 semaines au Centre de Biologie Intégrative du CNRS, j'ai migré ISfinder et ISadmin vers PHP 8.5, identifié et isolé un risque d'architecture critique, et développé quatre outils d'administration internes.",
     kind: "work",
   },
   {
@@ -454,8 +454,8 @@ export const TIMELINE = [
     titleEn: "BUT Informatique",
     titleFr: "BUT Informatique",
     org: "IUT Paul Sabatier, Université Toulouse III",
-    descEn: "I study application development, web technologies, and databases.",
-    descFr: "J'étudie le développement d'applications, le web et les bases de données.",
+    descEn: "I built Java applications, designed relational databases with PL/SQL, and developed a React web application through academic and personal projects.",
+    descFr: "J'ai développé des applications Java, conçu des bases relationnelles en PL/SQL et réalisé une application web React à travers mes projets.",
     kind: "edu",
   },
   {
@@ -463,8 +463,8 @@ export const TIMELINE = [
     titleEn: "Malaysia France pre-university programme",
     titleFr: "Programme pré-universitaire Malaisie France",
     org: "Université de Tours",
-    descEn: "I validated my B2 French language level.",
-    descFr: "J'ai validé mon niveau de français B2.",
+    descEn: "I strengthened my academic French and validated a B2 level in preparation for my degree.",
+    descFr: "J'ai renforcé mon français académique et validé un niveau B2 en préparation de mon BUT.",
     kind: "edu",
   },
   {
@@ -472,8 +472,8 @@ export const TIMELINE = [
     titleEn: "Sijil Pelajaran Malaysia",
     titleFr: "Sijil Pelajaran Malaysia",
     org: "Tuanku Munawir Science School, Malaysia",
-    descEn: "I earned my national secondary diploma with 9A+.",
-    descFr: "J'ai obtenu mon diplôme secondaire national avec mention.",
+    descEn: "I earned Malaysia's national secondary diploma (SPM) with 9A+, my strongest subjects in science and mathematics.",
+    descFr: "J'ai obtenu le diplôme national malaisien (SPM) avec 9A+, avec de meilleurs résultats en sciences et en mathématiques.",
     kind: "edu",
   },
 ];
