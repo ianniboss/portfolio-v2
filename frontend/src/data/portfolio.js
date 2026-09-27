@@ -224,10 +224,11 @@ export const PROJECTS = [
     accent: "amber",
     image: "/assets/projects/parking.png",
     descEn:
-      "This full-stack system processes real-time bookings, calculates fees, and enforces role-based access. The system solves overbooking and prevents lost revenue. I designed the database, built the Java GUI, wrote stored procedures, and coordinated the SCRUM team.",
+      "A team-built parking management system for Toulouse, developed as part of SAE3.01 at IUT Paul Sabatier. I designed the relational database in PL/SQL and built the Java desktop interface with Eclipse WindowBuilder, working as one of four developers in a Scrum team, with code quality tracked via SonarQube and test coverage via JaCoCo.",
     descFr:
-      "Ce système gère les réservations en temps réel, calcule les frais et contrôle les accès. Il empêche la sur-réservation. J'ai conçu la base de données, développé l'IHM Java, écrit les procédures stockées et coordonné l'équipe SCRUM.",
-    stack: ["Java", "PL/SQL", "SQL Developer", "Eclipse", "SCRUM"],
+      "Un système de gestion de stationnement pour Toulouse, développé dans le cadre de la SAE3.01 à l'IUT Paul Sabatier. J'ai conçu la base de données relationnelle en PL/SQL et développé l'interface Java avec Eclipse (WindowBuilder), en tant que l'un des quatre développeurs d'une équipe Scrum, avec un suivi qualité via SonarQube et une couverture de tests via JaCoCo.",
+    stack: ["Java", "PL/SQL", "SQL Developer", "Eclipse", "SCRUM", "SonarQube", "JaCoCo"],
+    sourceUrl: "https://github.com/ianniboss/se-garer-sur-toulouse",
   },
   {
     id: "apache-ssl",
