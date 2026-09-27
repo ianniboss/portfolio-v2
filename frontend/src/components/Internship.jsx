@@ -31,16 +31,16 @@ const AnimatedBeat = ({ beat, index, total, locale }) => {
   const title = locale === "fr" ? beat.titleFr : beat.titleEn;
   const color = accentHex(beat.accent);
 
-  /* Track scroll progress through the pinned container.
-     offset: "start start" = container top hits viewport top,
-             "end end"     = container bottom hits viewport bottom. */
+  /* Track scroll progress through the unpinned container.
+     offset: "start end" = top of container hits bottom of viewport
+             "start start" = top of container hits top of viewport */
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start start", "end end"],
+    offset: ["start end", "start start"],
   });
 
   /* Image starts at ~60% width with rounded corners,
-     expands to ~96% width with less rounding as you scroll. */
+     expands to ~96% width with less rounding as you scroll into view. */
   const width = useTransform(scrollYProgress, [0, 1], ["60%", "96%"]);
   const borderRadius = useTransform(scrollYProgress, [0, 1], ["16px", "4px"]);
 
@@ -48,63 +48,56 @@ const AnimatedBeat = ({ beat, index, total, locale }) => {
     <div
       ref={containerRef}
       data-testid={`internship-beat-${beat.id}`}
-      /* height = 150vh → 100vh for the pinned image + 50vh of scroll travel */
-      style={{ height: "150vh", position: "relative" }}
+      className="relative flex flex-col items-center justify-center py-10 md:py-16 overflow-hidden"
     >
-      {/* Sticky image layer */}
-      <div
-        className="sticky top-0 flex flex-col items-center justify-center overflow-hidden"
-        style={{ height: "100vh" }}
-      >
-        {/* Overlay: progress + date + title */}
-        <div className="absolute inset-0 z-10 flex flex-col justify-between pointer-events-none p-6 md:p-12">
-          <div className="flex items-center justify-between">
-            <ProgressLabel index={index} total={total} />
-            <span
-              className="font-mono text-[10px] uppercase tracking-[0.3em]"
-              style={{ color }}
-            >
-              {beat.date}
-            </span>
-          </div>
-          <div>
-            <h3
-              className="font-display text-3xl md:text-5xl lg:text-6xl tracking-tight leading-[1.05] text-[var(--text-primary)] max-w-2xl"
-              style={{ textShadow: "0 2px 24px rgba(0,0,0,0.7)" }}
-            >
-              {title}
-            </h3>
-          </div>
+      {/* Overlay: progress + date + title (full width overlay) */}
+      <div className="absolute inset-x-0 inset-y-10 md:inset-y-16 z-10 flex flex-col justify-between pointer-events-none p-6 md:p-12">
+        <div className="flex items-center justify-between">
+          <ProgressLabel index={index} total={total} />
+          <span
+            className="font-mono text-[10px] uppercase tracking-[0.3em]"
+            style={{ color }}
+          >
+            {beat.date}
+          </span>
         </div>
-
-        {/* Expanding image */}
-        <motion.div
-          className="relative overflow-hidden"
-          style={{
-            width,
-            borderRadius,
-            aspectRatio: "16 / 9",
-            maxHeight: "85vh",
-          }}
-        >
-          <img
-            src={beat.image}
-            alt={title}
-            loading="lazy"
-            className="absolute inset-0 w-full h-full object-cover"
-            style={{
-              filter: "brightness(0.55) contrast(1.1)",
-            }}
-          />
-          {/* Subtle gradient tint overlay in accent color */}
-          <div
-            className="absolute inset-0 mix-blend-overlay opacity-30"
-            style={{
-              background: `linear-gradient(135deg, ${color}44, transparent 60%)`,
-            }}
-          />
-        </motion.div>
+        <div>
+          <h3
+            className="font-display text-3xl md:text-5xl lg:text-6xl tracking-tight leading-[1.05] text-[var(--text-primary)] max-w-2xl"
+            style={{ textShadow: "0 2px 24px rgba(0,0,0,0.7)" }}
+          >
+            {title}
+          </h3>
+        </div>
       </div>
+
+      {/* Expanding image */}
+      <motion.div
+        className="relative overflow-hidden"
+        style={{
+          width,
+          borderRadius,
+          aspectRatio: "16 / 9",
+          maxHeight: "85vh",
+        }}
+      >
+        <img
+          src={beat.image}
+          alt={title}
+          loading="lazy"
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{
+            filter: "brightness(0.55) contrast(1.1)",
+          }}
+        />
+        {/* Subtle gradient tint overlay in accent color */}
+        <div
+          className="absolute inset-0 mix-blend-overlay opacity-30"
+          style={{
+            background: `linear-gradient(135deg, ${color}44, transparent 60%)`,
+          }}
+        />
+      </motion.div>
     </div>
   );
 };
@@ -172,7 +165,7 @@ const NarrativeBlock = ({ beat, locale }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-      className="relative pt-4 pb-20 md:pt-8 md:pb-32 px-6 md:px-12 lg:px-20 -mt-8 md:-mt-12 z-20"
+      className="relative pt-6 pb-24 md:pt-10 md:pb-32 px-6 md:px-12 lg:px-20 z-20"
     >
       <div className="max-w-[1400px] mx-auto">
         <div className="max-w-2xl">
