@@ -48,8 +48,8 @@ const AnimatedBeat = ({ beat, index, total, locale }) => {
     <div
       ref={containerRef}
       data-testid={`internship-beat-${beat.id}`}
-      /* height = 200vh → 100vh for the pinned image + 100vh of scroll travel */
-      style={{ height: "200vh", position: "relative" }}
+      /* height = 150vh → 100vh for the pinned image + 50vh of scroll travel */
+      style={{ height: "150vh", position: "relative" }}
     >
       {/* Sticky image layer */}
       <div
@@ -172,7 +172,7 @@ const NarrativeBlock = ({ beat, locale }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-      className="relative py-20 md:py-32 px-6 md:px-12 lg:px-20"
+      className="relative pt-4 pb-20 md:pt-8 md:pb-32 px-6 md:px-12 lg:px-20 -mt-8 md:-mt-12 z-20"
     >
       <div className="max-w-[1400px] mx-auto">
         <div className="max-w-2xl">
