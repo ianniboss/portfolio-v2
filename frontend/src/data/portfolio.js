@@ -520,9 +520,9 @@ export const INTERNSHIP_BEATS = [
     titleEn: "The place",
     titleFr: "Le lieu",
     textEn:
-      "Twelve weeks at CNRS\u2019s Centre de Biologie Int\u00e9grative in Toulouse, under Patricia Siguier, on ISfinder \u2014 a research platform cataloguing insertion sequences in genomic data. I started by reading: comparing PHP 8.0 and 8.2 versions of the codebase and mapping how the public site (ISfinder), the submission tool (ISsubmit), and the internal admin interface (ISadmin) actually connected.",
+      "Twelve weeks at CNRS's Centre de Biologie Intégrative in Toulouse, under Patricia Siguier, on ISfinder, a research platform cataloguing insertion sequences in genomic data. I started by reading: comparing PHP 8.0 and 8.2 versions of the codebase and mapping how the public site (ISfinder), the submission tool (ISsubmit), and the internal admin interface (ISadmin) actually connected.",
     textFr:
-      "Douze semaines au Centre de Biologie Int\u00e9grative du CNRS \u00e0 Toulouse, sous la tutelle de Patricia Siguier, sur ISfinder \u2014 une plateforme de recherche cataloguant des s\u00e9quences d\u2019insertion dans des donn\u00e9es g\u00e9nomiques. J\u2019ai commenc\u00e9 par lire : comparer les versions PHP 8.0 et 8.2 du code, comprendre comment le site public (ISfinder), l\u2019outil de soumission (ISsubmit) et l\u2019interface d\u2019administration (ISadmin) communiquaient r\u00e9ellement.",
+      "Douze semaines au Centre de Biologie Intégrative du CNRS à Toulouse, sous la tutelle de Patricia Siguier, sur ISfinder, une plateforme de recherche cataloguant des séquences d'insertion dans des données génomiques. J'ai commencé par lire : comparer les versions PHP 8.0 et 8.2 du code, comprendre comment le site public (ISfinder), l'outil de soumission (ISsubmit) et l'interface d'administration (ISadmin) communiquaient réellement.",
   },
   {
     id: "the-problem",
@@ -532,9 +532,9 @@ export const INTERNSHIP_BEATS = [
     titleEn: "The problem",
     titleFr: "Le probl\u00e8me",
     textEn:
-      "A week in, a review with Patricia and Jocelyne surfaced something more serious than a compatibility warning: external submission forms were writing directly into the internal production database \u2014 a real risk for a platform other researchers depend on.",
+      "A week in, a review with Patricia and Jocelyne surfaced something more serious than a compatibility warning. External submission forms were writing directly into the internal production database, a real risk for a platform other researchers depend on.",
     textFr:
-      "Une semaine plus tard, une r\u00e9union avec Patricia et Jocelyne a fait remonter quelque chose de plus s\u00e9rieux qu\u2019un avertissement de compatibilit\u00e9 : les formulaires de soumission externes \u00e9crivaient directement dans la base de production interne \u2014 un vrai risque pour une plateforme dont d\u00e9pendent d\u2019autres chercheurs.",
+      "Une semaine plus tard, une réunion avec Patricia et Jocelyne a fait remonter quelque chose de plus sérieux qu'un avertissement de compatibilité. Les formulaires de soumission externes écrivaient directement dans la base de production interne, un vrai risque pour une plateforme dont dépendent d'autres chercheurs.",
   },
   {
     id: "the-pivot",
@@ -544,9 +544,9 @@ export const INTERNSHIP_BEATS = [
     titleEn: "The pivot",
     titleFr: "Le pivot",
     textEn:
-      "The plan became: isolate a new ISsubmit database on the external server, and \u2014 on Patricia and Pierre\u2019s advice \u2014 push the migration target further, from PHP 8.4 to PHP 8.5, for a codebase built to last.",
+      "The plan became clear: isolate a new ISsubmit database on the external server, and on Patricia and Pierre's advice, push the migration target further, from PHP 8.4 to PHP 8.5, for a codebase built to last.",
     textFr:
-      "Le plan est devenu : isoler une nouvelle base ISsubmit sur le serveur externe, et, sur les conseils de Patricia et Pierre, pousser l\u2019objectif de migration plus loin, de PHP 8.4 \u00e0 PHP 8.5, pour un code pens\u00e9 pour durer.",
+      "Le plan est devenu clair : isoler une nouvelle base ISsubmit sur le serveur externe, et, sur les conseils de Patricia et Pierre, pousser l'objectif de migration plus loin, de PHP 8.4 à PHP 8.5, pour un code pensé pour durer.",
   },
   {
     id: "hardening",
@@ -556,9 +556,9 @@ export const INTERNSHIP_BEATS = [
     titleEn: "Hardening the public site",
     titleFr: "Fiabiliser le site public",
     textEn:
-      "I fixed the fatal errors PHP 8.5 introduced \u2014 missing-variable checks, session ID sanitization, null-safe database inserts \u2014 then modernized the BLAST search module so it no longer depended on hardcoded absolute paths, and rebuilt the CAPTCHA system from scratch so a failed check no longer wiped out what a user had already typed.",
+      "I fixed the fatal errors PHP 8.5 introduced, including missing-variable checks, session ID sanitization, and null-safe database inserts. I then modernized the BLAST search module so it no longer depended on hardcoded absolute paths, and rebuilt the CAPTCHA system from scratch so a failed check no longer wiped out what a user had already typed.",
     textFr:
-      "J\u2019ai corrig\u00e9 les erreurs fatales introduites par PHP 8.5 \u2014 v\u00e9rification des variables manquantes, nettoyage des identifiants de session, insertions en base s\u00e9curis\u00e9es \u2014 puis modernis\u00e9 le module de recherche BLAST pour qu\u2019il ne d\u00e9pende plus de chemins absolus cod\u00e9s en dur, et enti\u00e8rement reconstruit le syst\u00e8me de CAPTCHA pour qu\u2019un \u00e9chec de validation n\u2019efface plus la saisie d\u00e9j\u00e0 faite par l\u2019utilisateur.",
+      "J'ai corrigé les erreurs fatales introduites par PHP 8.5, notamment la vérification des variables manquantes, le nettoyage des identifiants de session et les insertions en base sécurisées. J'ai ensuite modernisé le module de recherche BLAST pour qu'il ne dépende plus de chemins absolus codés en dur, et entièrement reconstruit le système de CAPTCHA pour qu'un échec de validation n'efface plus la saisie déjà faite par l'utilisateur.",
   },
   {
     id: "admin-tools",
@@ -570,7 +570,7 @@ export const INTERNSHIP_BEATS = [
     textEn:
       "Beyond the public site, I shipped four tools for the internal ISadmin interface: a CSV export tool locked to read-only queries (blocking any accidental UPDATE/DELETE), a reference-management screen that stops you from deleting a category still in use, an incomplete-record detector so nothing falls through the cracks mid-submission, and quick-action deletion buttons that preserve linked records instead of orphaning them.",
     textFr:
-      "Au-del\u00e0 du site public, j\u2019ai livr\u00e9 quatre outils pour l\u2019interface interne ISadmin : un export CSV verrouill\u00e9 aux requ\u00eates de lecture seule (bloquant tout UPDATE/DELETE accidentel), un \u00e9cran de gestion des r\u00e9f\u00e9rences emp\u00eachant la suppression d\u2019une cat\u00e9gorie encore utilis\u00e9e, un d\u00e9tecteur de fiches incompl\u00e8tes pour qu\u2019aucune soumission ne passe entre les mailles du filet, et des boutons de suppression rapide pr\u00e9servant les enregistrements li\u00e9s plut\u00f4t que de les rendre orphelins.",
+      "Au-delà du site public, j'ai livré quatre outils pour l'interface interne ISadmin : un export CSV verrouillé aux requêtes de lecture seule (bloquant tout UPDATE/DELETE accidentel), un écran de gestion des références empêchant la suppression d'une catégorie encore utilisée, un détecteur de fiches incomplètes pour qu'aucune soumission ne passe entre les mailles du filet, et des boutons de suppression rapide préservant les enregistrements liés plutôt que de les rendre orphelins.",
   },
   {
     id: "design-touch",
@@ -580,8 +580,8 @@ export const INTERNSHIP_BEATS = [
     titleEn: "A design touch, and what it taught me",
     titleFr: "Une touche design, et ce que \u00e7a m\u2019a appris",
     textEn:
-      "I also proposed and shipped a redesign of the platform\u2019s resource-links page into a card carousel, spotlighting the databases researchers reach for most. Twelve weeks in someone else\u2019s production code, on a real research team, taught me that \u201cmodernize this\u201d almost always means finding the actual problem first \u2014 and that\u2019s what I\u2019m looking to build on in an alternance.",
+      "I also proposed and shipped a redesign of the platform's resource-links page into a card carousel, spotlighting the databases researchers reach for most. Twelve weeks in someone else's production code, on a real research team, taught me that \"modernize this\" almost always means finding the actual problem first. That's what I'm looking to build on in an alternance.",
     textFr:
-      "J\u2019ai aussi propos\u00e9 et livr\u00e9 une refonte de la page de liens de la plateforme sous forme de carrousel de cartes, mettant en avant les bases de donn\u00e9es les plus consult\u00e9es par les chercheurs. Douze semaines dans le code de production de quelqu\u2019un d\u2019autre, au sein d\u2019une v\u00e9ritable \u00e9quipe de recherche, m\u2019ont appris que \u00ab moderniser \u00bb signifie presque toujours trouver le vrai probl\u00e8me avant tout \u2014 et c\u2019est sur cette base que je veux continuer \u00e0 construire en alternance.",
+      "J'ai aussi proposé et livré une refonte de la page de liens de la plateforme sous forme de carrousel de cartes, mettant en avant les bases de données les plus consultées par les chercheurs. Douze semaines dans le code de production de quelqu'un d'autre, au sein d'une véritable équipe de recherche, m'ont appris que « moderniser » signifie presque toujours trouver le vrai problème avant tout. C'est sur cette base que je veux continuer à construire en alternance.",
   },
 ];
