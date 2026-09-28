@@ -11,7 +11,6 @@ const PhotoCarousel = () => {
   const thumbnailsRef = useRef(null);
 
   const images = COMMUNITY_MOMENTS;
-  if (!images || images.length === 0) return null;
 
   const navigate = useCallback(
     (newDirection) => {
@@ -58,6 +57,8 @@ const PhotoCarousel = () => {
       }
     }
   }, [currentIndex, shouldReduceMotion]);
+
+  if (!images || images.length === 0) return null;
 
   const variants = {
     enter: (direction) => ({
