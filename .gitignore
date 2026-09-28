@@ -93,3 +93,9 @@ frontend/node_modules/.cache/default-development/8.pack_
 frontend/node_modules/.cache/default-development/5.pack
 frontend/node_modules/.cache/default-development/9.pack
 frontend/node_modules/.cache/default-development/8.pack
+
+# AI tooling scaffolding
+.emergent/
+.clinerules
+.cursorrules
+.gitconfig
