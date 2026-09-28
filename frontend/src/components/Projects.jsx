@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { PROJECTS } from "../data/portfolio";
 import { useI18n } from "../context/I18nContext";
+import GitHubCalendar from "./GitHubCalendar";
 
 const accentColor = (a) => {
   switch (a) {
@@ -221,6 +222,8 @@ const Projects = () => {
             <ProjectCard key={p.id} project={p} index={i} locale={locale} />
           ))}
         </div>
+
+        <GitHubCalendar />
       </div>
     </section>
   );

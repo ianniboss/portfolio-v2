@@ -68,6 +68,7 @@ export const COPY = {
       title: "My projects.",
       subtitle: "These include academic, personal, and internship projects. Hover a card to flip the view.",
       empty_links: "Code on request",
+      githubActivity: "GitHub activity",
     },
     experience: {
       eyebrow: "Experience",
@@ -145,6 +146,7 @@ export const COPY = {
       title: "Mes projets.",
       subtitle: "Voici mes projets académiques, personnels et de stage. Survolez une carte pour voir l'autre face.",
       empty_links: "Code sur demande",
+      githubActivity: "Activité GitHub",
     },
     experience: {
       eyebrow: "Expérience",
