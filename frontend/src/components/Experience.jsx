@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { TIMELINE, COMMUNITY } from "../data/portfolio";
 import { useI18n } from "../context/I18nContext";
+import PhotoCarousel from "./PhotoCarousel";
 
 /* Reusable timeline list — renders any array of timeline items with a given dot color */
 const TimelineList = ({ items, locale, dotColor, startIndex = 0 }) => (
@@ -79,6 +80,7 @@ const Experience = () => {
             dotColor="#9A9490"
             startIndex={TIMELINE.length}
           />
+          <PhotoCarousel />
         </div>
       </div>
     </section>

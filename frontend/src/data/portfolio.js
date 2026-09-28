@@ -74,6 +74,7 @@ export const COPY = {
       eyebrow: "Experience",
       title: "My workplace and study history.",
       communityHeading: "Community involvement",
+      communityMoments: "Community moments",
     },
     contact: {
       eyebrow: "Contact",
@@ -152,6 +153,7 @@ export const COPY = {
       eyebrow: "Expérience",
       title: "Mes emplois et études.",
       communityHeading: "Engagement associatif",
+      communityMoments: "Moments de la communauté",
     },
     contact: {
       eyebrow: "Contact",
@@ -586,4 +588,37 @@ export const INTERNSHIP_BEATS = [
     textFr:
       "J'ai aussi proposé et livré une refonte de la page de liens de la plateforme sous forme de carrousel de cartes, mettant en avant les bases de données les plus consultées par les chercheurs. Douze semaines dans le code de production de quelqu'un d'autre, au sein d'une véritable équipe de recherche, m'ont appris que « moderniser » signifie presque toujours trouver le vrai problème avant tout. C'est sur cette base que je veux continuer à construire en alternance.",
   },
+];
+
+export const COMMUNITY_MOMENTS = [
+  {
+    id: "masaf-games-2024",
+    image: "/assets/community/01-masaf-games.webp",
+    thumb: "/assets/community/thumbs/01-masaf-games.webp",
+    focus: "50% 30%",
+    captionEn: "MASAF Games, 2024",
+    captionFr: "Jeux MASAF, 2024",
+    altEn: "Group photo of Malaysian students at MASAF Games 2024",
+    altFr: "Photo de groupe d'étudiants malaisiens aux Jeux MASAF 2024",
+  },
+  {
+    id: "cultural-night-2024",
+    image: "/assets/community/02-cultural-night.webp",
+    thumb: "/assets/community/thumbs/02-cultural-night.webp",
+    focus: "50% 50%",
+    captionEn: "Malaysian Cultural Night, 2024",
+    captionFr: "Soirée Culturelle Malaisienne, 2024",
+    altEn: "Students performing at the Malaysian Cultural Night",
+    altFr: "Étudiants en spectacle lors de la Soirée Culturelle Malaisienne",
+  },
+  {
+    id: "spring-gathering-2025",
+    image: "/assets/community/03-spring-gathering.webp",
+    thumb: "/assets/community/thumbs/03-spring-gathering.webp",
+    focus: "40% 40%",
+    captionEn: "Spring Gathering, 2025",
+    captionFr: "Rassemblement de Printemps, 2025",
+    altEn: "Malaysian students gathered for a spring event",
+    altFr: "Étudiants malaisiens réunis pour un événement printanier",
+  }
 ];
