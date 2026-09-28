@@ -661,4 +661,14 @@ export const COMMUNITY_MOMENTS = [
     altEn: "Malaysian students together in France",
     altFr: "Étudiants malaisiens ensemble en France",
   },
+  {
+    id: "community-08",
+    image: "/assets/community/08-community.webp",
+    thumb: "/assets/community/thumbs/08-community.webp",
+    focus: "50% 50%",
+    captionEn: "Community Activities",
+    captionFr: "Activités communautaires",
+    altEn: "Malaysian students community activities",
+    altFr: "Activités de la communauté étudiante malaisienne",
+  },
 ];
