@@ -305,19 +305,19 @@ export const PROJECTS = [
   },
   {
     id: "graphs",
-    titleEn: "Algorithmic Exploration and Graph Theory",
-    titleFr: "Exploration algorithmique et théorie des graphes",
+    titleEn: "Algorithmic Graph Theory and Benchmarking",
+    titleFr: "Théorie algorithmique des graphes et benchmarking",
     year: "2024",
-    typeEn: "Research and development",
-    typeFr: "Recherche et développement",
+    typeEn: "Research & Development",
+    typeFr: "Recherche & Développement",
     coverHue: 278,
     accent: "purple",
     image: "/assets/projects/graphs.png",
     descEn:
-      "I benchmarked pathfinding algorithms on large graphs. I implemented Dijkstra, A Star, and Bellman-Ford from scratch. I created matplotlib visualizations and memory-optimized adjacency lists.",
+      "I implemented and benchmarked Dijkstra and Bellman-Ford algorithms to evaluate their empirical time complexity. Additionally, I generated random weighted adjacency matrices, visualized shortest paths with Matplotlib, and analyzed strong connectivity thresholds using the Roy-Warshall algorithm.",
     descFr:
-      "J'ai évalué des algorithmes de pathfinding sur de grands graphes. J'ai implémenté Dijkstra, A Star et Bellman-Ford. J'ai créé des visualisations matplotlib et optimisé les listes d'adjacence.",
-    stack: ["Python", "Algorithms", "Graph Theory", "matplotlib"],
+      "J'ai implémenté et évalué les algorithmes de Dijkstra et Bellman-Ford pour analyser leur complexité temporelle empirique. J'ai également généré des matrices d'adjacence aléatoires pondérées, visualisé des plus courts chemins avec Matplotlib, et analysé les seuils de forte connexité avec l'algorithme de Roy-Warshall.",
+    stack: ["Python", "Algorithms", "Graph Theory", "Matplotlib", "Benchmarking"],
   },
   {
     id: "mh-students",
