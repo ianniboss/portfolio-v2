@@ -73,7 +73,7 @@ const AnimatedBeat = ({ beat, index, total, locale }) => {
 
       {/* Expanding image */}
       <motion.div
-        className="relative overflow-hidden"
+        className="relative overflow-hidden bg-black/40"
         style={{
           width,
           borderRadius,
@@ -85,7 +85,7 @@ const AnimatedBeat = ({ beat, index, total, locale }) => {
           src={beat.image}
           alt={title}
           loading="lazy"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-contain"
           style={{
             filter: "brightness(0.55) contrast(1.1)",
           }}
@@ -126,12 +126,12 @@ const StaticBeat = ({ beat, index, total, locale }) => {
 
       {/* Static image at moderate size */}
       <div className="relative overflow-hidden rounded-sm border border-white/10 mx-auto" style={{ maxWidth: "800px" }}>
-        <div className="relative" style={{ aspectRatio: "16 / 9" }}>
+        <div className="relative bg-black/40" style={{ aspectRatio: "16 / 9" }}>
           <img
             src={beat.image}
             alt={title}
             loading="lazy"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
             style={{ filter: "brightness(0.65) contrast(1.05)" }}
           />
           <div
