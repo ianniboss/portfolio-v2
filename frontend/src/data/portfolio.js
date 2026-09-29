@@ -445,6 +445,23 @@ export const PROJECTS = [
     demoUrl: "https://mario-notion.vercel.app",
     sourceUrl: `${GH}/mario-notion`,
   },
+  {
+    id: "cryptomaster",
+    titleEn: "CryptoMaster Encryption CLI",
+    titleFr: "Outil de chiffrement CryptoMaster",
+    year: "2024",
+    typeEn: "Academic C project",
+    typeFr: "Projet académique en C",
+    coverHue: 220,
+    accent: "blue",
+    image: "/assets/projects/crypto.png",
+    descEn:
+      "I developed a C-based command-line application implementing classical encryption algorithms like Caesar and Vigenère ciphers. Working in a pair, I designed an interactive spy-themed menu to encrypt and decrypt messages, utilizing a modular codebase and a Makefile build system.",
+    descFr:
+      "J'ai développé une application en ligne de commande en C implémentant des algorithmes de chiffrement classiques comme César et Vigenère. En binôme, j'ai conçu un menu interactif sur le thème de l'espionnage pour chiffrer et déchiffrer des messages, en utilisant un code modulaire et un système de build Makefile.",
+    stack: ["C", "Cryptography", "Algorithms", "Makefile", "CLI"],
+    sourceUrl: `${GH}/MiniProjetC_BINSYAHRULAZLAN_HILAIRE`,
+  },
 ];
 
 export const TIMELINE = [
