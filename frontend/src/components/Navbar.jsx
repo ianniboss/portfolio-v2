@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useI18n } from "../context/I18nContext";
 import { PROFILE } from "../data/portfolio";
 
-const sections = ["home", "about", "skills", "projects", "contact"];
+const sections = ["home", "about", "skills", "internship", "projects", "contact"];
 
 const MagneticLink = ({ href, children, onClick, testId }) => {
   const ref = useRef(null);
@@ -51,6 +51,7 @@ const Navbar = () => {
     { id: "home", label: t.nav.home },
     { id: "about", label: t.nav.about },
     { id: "skills", label: t.nav.skills },
+    { id: "internship", label: t.nav.experience },
     { id: "projects", label: t.nav.projects },
     { id: "contact", label: t.nav.contact },
   ];
