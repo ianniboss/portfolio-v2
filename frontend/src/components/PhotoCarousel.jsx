@@ -83,7 +83,7 @@ const PhotoCarousel = () => {
 
   return (
     <div 
-      className="mt-16 w-full focus:outline-none" 
+      className="mt-16 w-full max-w-5xl mx-auto focus:outline-none" 
       onKeyDown={handleKeyDown} 
       tabIndex={0} 
       aria-label="Photo carousel"
