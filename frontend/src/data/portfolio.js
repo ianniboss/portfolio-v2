@@ -281,10 +281,10 @@ export const PROJECTS = [
     accent: "amber",
     image: "/assets/projects/tomato.png",
     descEn:
-      "I developed a desktop application for agricultural inventory and sales. I designed the UML architecture and SQL schema. I built the Java Swing UI and optimized database read operations.",
+      "I developed a desktop application for managing tomato products and sales, featuring a product catalog, a dynamic shopping cart, and real-time stock management. Built with Java Swing for the graphical user interface, the application relies on an embedded JSON file system for data persistence to automatically save and load stock updates. I designed the object-oriented architecture using Modelio and UML diagrams to ensure a clean separation between the user interface and core business logic.",
     descFr:
-      "J'ai développé une application de gestion de stock agricole. J'ai conçu l'architecture UML et le schéma SQL. J'ai créé l'IHM en Java Swing et optimisé les lectures en base de données.",
-    stack: ["Java", "Swing", "Modelio", "UML", "SQL"],
+      "J'ai développé une application de bureau pour la gestion des ventes de tomates, avec un catalogue, un panier dynamique et une gestion des stocks en temps réel. Construite avec Java Swing, l'application utilise un système de fichiers JSON pour sauvegarder et charger automatiquement les stocks. J'ai conçu l'architecture orientée objet avec Modelio et des diagrammes UML pour assurer une séparation claire entre l'interface utilisateur et la logique métier.",
+    stack: ["Java", "Swing", "JSON", "Modelio", "UML", "Maven", "OOP"],
     sourceUrl: `${GH}/S201_TOMATES`,
   },
   {
