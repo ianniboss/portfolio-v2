@@ -348,9 +348,9 @@ export const PROJECTS = [
     accent: "teal",
     image: "/assets/projects/trilingual.png",
     descEn:
-      "I built a real-time translator for Malay, English, and French. The app uses the Gemini API. I implemented parallel API calls, prompt engineering, and rate limiting.",
+      "I built a real-time Malay, English, and French translator powered by the Gemini API. To deliver fast and accurate translations, I optimized the application with parallel API calls, applied targeted prompt engineering, and implemented robust rate limiting.",
     descFr:
-      "J'ai créé un traducteur en temps réel pour le malais, l'anglais et le français. L'application utilise l'API Gemini. J'ai géré les requêtes parallèles, le prompt engineering et les limites d'API.",
+      "J'ai développé un traducteur en temps réel pour le malais, l'anglais et le français, propulsé par l'API Gemini. Pour assurer des traductions rapides et précises, j'ai optimisé l'application grâce à des appels API en parallèle, affiné les résultats avec du prompt engineering et géré rigoureusement les limites de requêtes.",
     stack: ["React", "Gemini API", "Tailwind CSS", "AI"],
     sourceUrl: `${GH}/trilingue-translator`,
   },
