@@ -1,9 +1,8 @@
 import React from "react";
 import { useI18n } from "../context/I18nContext";
 import { PROFILE } from "../data/portfolio";
-
 const Footer = () => {
-  const { t } = useI18n();
+  const { t, locale } = useI18n();
   return (
     <footer
       data-testid="site-footer"
@@ -17,7 +16,7 @@ const Footer = () => {
         <div className="flex items-center gap-5 font-mono text-[11px] uppercase tracking-[0.3em]">
           <a
             data-testid="footer-cv"
-            href={PROFILE.cv}
+            href={locale === "fr" ? PROFILE.cv_fr : PROFILE.cv_en}
             target="_blank"
             rel="noreferrer noopener"
             className="text-[var(--text-primary)] hover:text-[var(--amber)] transition-colors"

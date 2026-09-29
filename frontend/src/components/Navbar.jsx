@@ -93,7 +93,7 @@ const Navbar = () => {
 
         <div className="flex items-center gap-4">
           <a
-            href={PROFILE.cv}
+            href={locale === "fr" ? PROFILE.cv_fr : PROFILE.cv_en}
             target="_blank"
             rel="noreferrer noopener"
             data-testid="nav-cv"
@@ -158,7 +158,7 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href={PROFILE.cv}
+              href={locale === "fr" ? PROFILE.cv_fr : PROFILE.cv_en}
               target="_blank"
               rel="noreferrer noopener"
               data-testid="nav-mobile-cv"

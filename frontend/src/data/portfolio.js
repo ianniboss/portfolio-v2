@@ -12,7 +12,8 @@ export const PROFILE = {
   linkedin: "https://www.linkedin.com/in/ian-bin-syahrul-azlan",
   instagram: "https://www.instagram.com/iandelreyyy/",
   discord: "https://discord.gg/fcTVw6pg",
-  cv: "/assets/Ian_Bin_Syahrul_Azlan_CV.pdf",
+  cv_fr: "/assets/Ian_Bin_Syahrul_Azlan_CV.pdf",
+  cv_en: "/assets/Resume_IanHafizBinSyahrulAzlan.pdf",
   portrait: "/assets/photo_4_2026-01-14_23-51-13.jpg",
 };
 
