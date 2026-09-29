@@ -289,8 +289,8 @@ export const PROJECTS = [
   },
   {
     id: "lol-stats",
-    titleEn: "Data Analysis & Visualization Dashboard",
-    titleFr: "Application d'analyse et de visualisation de données",
+    titleEn: "League of Legends Data Analysis Dashboard",
+    titleFr: "Tableau de bord d'analyse de données League of Legends",
     year: "2024",
     typeEn: "Academic web app",
     typeFr: "Projet académique web",
@@ -298,10 +298,10 @@ export const PROJECTS = [
     accent: "teal",
     image: "/assets/projects/lol_stats.png",
     descEn:
-      "I built an Oracle APEX dashboard for structured data analysis and visualization. I handled API data ingestion, schema design, complex SQL queries, rate limits, JSON parsing, and correlation analysis.",
+      "I developed an interactive Oracle APEX dashboard to analyze League of Legends match data from the Riot Games API. I designed SQL queries, views, functions, and triggers to extract performance metrics and created interactive visualizations to explore correlations between gold earned, damage dealt, and match outcomes.",
     descFr:
-      "J'ai développé un tableau de bord Oracle APEX pour l'analyse et la visualisation de données structurées. J'ai géré l'ingestion de données API, le schéma, les requêtes SQL complexes, les limites de requêtes, le parsing JSON et l'analyse de corrélation.",
-    stack: ["Oracle APEX", "SQL", "Riot API", "JSON"],
+      "J'ai développé un tableau de bord Oracle APEX interactif pour analyser les données de matchs League of Legends de l'API Riot Games. J'ai conçu des requêtes SQL, vues, fonctions et déclencheurs pour extraire des métriques de performance et créé des visualisations interactives explorant les corrélations entre l'or gagné, les dégâts infligés et les résultats des matchs.",
+    stack: ["Oracle APEX", "SQL", "Riot API", "Data Analysis", "Data Visualization"],
   },
   {
     id: "graphs",
