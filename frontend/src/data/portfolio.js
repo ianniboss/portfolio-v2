@@ -40,7 +40,7 @@ export const COPY = {
       eyebrow: "About",
       title: "I bring a dual-culture perspective to development.",
       paragraphs: [
-        "My focus is on software development and application design, as I enjoy figuring out how systems hold together from end to end.",
+        "I'm a third-year BUT Informatique student at IUT Paul Sabatier, and a JPA (Malaysian Public Service Department) scholarship holder. My focus is on software development and application design, as I enjoy figuring out how systems hold together from end to end.",
         "My coursework has taken me through PHP, Java, Python, JavaScript, and SQL, working with Git, Docker, and Linux along the way. Moving from Malaysia to France taught me to adapt fast, to new systems and new teams alike.",
         "During a 12-week internship at CNRS's Centre de Biologie Intégrative, I worked on ISfinder, a research-facing web tool. I migrated the application to PHP 8, resolving compatibility issues and managing the database in an active research environment.",
       ],
