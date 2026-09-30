@@ -4,7 +4,6 @@ import { TIMELINE, COMMUNITY } from "../data/portfolio";
 import { useI18n } from "../context/I18nContext";
 import PhotoCarousel from "./PhotoCarousel";
 
-/* Reusable timeline list — renders any array of timeline items with a given dot color */
 const TimelineList = ({ items, locale, dotColor, startIndex = 0 }) => (
   <ol className="relative border-l border-white/10 pl-6 md:pl-10 space-y-10">
     {items.map((item, i) => {
@@ -58,18 +57,15 @@ const Experience = () => {
       className="relative py-24 md:py-32 px-6 md:px-12 lg:px-20"
     >
       <div className="max-w-[1400px] mx-auto">
-        {/* Section heading */}
         <div className="eyebrow">/ 05 {t.experience.eyebrow}</div>
         <h2 className="font-display mt-4 text-3xl md:text-5xl tracking-tight leading-[1.05] text-[var(--text-primary)] max-w-3xl">
           {t.experience.title}
         </h2>
 
-        {/* Education & work timeline */}
         <div className="mt-14">
           <TimelineList items={TIMELINE} locale={locale} />
         </div>
 
-        {/* Community involvement */}
         <div className="mt-20">
           <h3 className="font-display text-xl md:text-2xl tracking-tight text-[var(--text-primary)] mb-10">
             {t.experience.communityHeading}

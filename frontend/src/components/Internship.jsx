@@ -4,7 +4,6 @@ import { INTERNSHIP_BEATS } from "../data/portfolio";
 import { useI18n } from "../context/I18nContext";
 import { useReducedMotion } from "../hooks/useReducedMotion";
 
-/* ── Accent color lookup — reuses the site's palette ──────────────── */
 const accentHex = (a) => {
   switch (a) {
     case "amber":
@@ -18,29 +17,22 @@ const accentHex = (a) => {
   }
 };
 
-/* ── Progress label — "01 / 05" style, JetBrains Mono ──────────── */
 const ProgressLabel = ({ index, total }) => (
   <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-[var(--text-secondary)]">
     {String(index + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}
   </span>
 );
 
-/* ── Single scroll-expansion beat (animated) ───────────────────── */
 const AnimatedBeat = ({ beat, index, total, locale }) => {
   const containerRef = useRef(null);
   const title = locale === "fr" ? beat.titleFr : beat.titleEn;
   const color = accentHex(beat.accent);
 
-  /* Track scroll progress through the unpinned container.
-     offset: "start end" = top of container hits bottom of viewport
-             "start start" = top of container hits top of viewport */
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start end", "start start"],
   });
 
-  /* Image starts at ~60% width with rounded corners,
-     expands to ~96% width with less rounding as you scroll into view. */
   const width = useTransform(scrollYProgress, [0, 1], ["60%", "96%"]);
   const borderRadius = useTransform(scrollYProgress, [0, 1], ["16px", "4px"]);
 
@@ -50,7 +42,6 @@ const AnimatedBeat = ({ beat, index, total, locale }) => {
       data-testid={`internship-beat-${beat.id}`}
       className="relative flex flex-col items-center justify-center py-10 md:py-16 overflow-hidden"
     >
-      {/* Overlay: progress + date + title (full width overlay) */}
       <div className="absolute inset-x-0 inset-y-10 md:inset-y-16 z-10 flex flex-col justify-between pointer-events-none p-6 md:p-12">
         <div className="flex items-center justify-between">
           <ProgressLabel index={index} total={total} />
@@ -71,7 +62,6 @@ const AnimatedBeat = ({ beat, index, total, locale }) => {
         </div>
       </div>
 
-      {/* Expanding image */}
       <motion.div
         className="relative overflow-hidden bg-black/40"
         style={{
@@ -90,7 +80,6 @@ const AnimatedBeat = ({ beat, index, total, locale }) => {
             filter: "brightness(0.55) contrast(1.1)",
           }}
         />
-        {/* Subtle gradient tint overlay in accent color */}
         <div
           className="absolute inset-0 mix-blend-overlay opacity-30"
           style={{
@@ -102,7 +91,6 @@ const AnimatedBeat = ({ beat, index, total, locale }) => {
   );
 };
 
-/* ── Single beat — static (reduced motion) ────────────────────── */
 const StaticBeat = ({ beat, index, total, locale }) => {
   const title = locale === "fr" ? beat.titleFr : beat.titleEn;
   const text = locale === "fr" ? beat.textFr : beat.textEn;
@@ -113,7 +101,6 @@ const StaticBeat = ({ beat, index, total, locale }) => {
       data-testid={`internship-beat-${beat.id}`}
       className="py-16 md:py-24"
     >
-      {/* Progress + date row */}
       <div className="flex items-center justify-between mb-6">
         <ProgressLabel index={index} total={total} />
         <span
@@ -124,7 +111,6 @@ const StaticBeat = ({ beat, index, total, locale }) => {
         </span>
       </div>
 
-      {/* Static image at moderate size */}
       <div className="relative overflow-hidden rounded-sm border border-white/10 mx-auto" style={{ maxWidth: "800px" }}>
         <div className="relative bg-black/40" style={{ aspectRatio: "16 / 9" }}>
           <img
@@ -143,7 +129,6 @@ const StaticBeat = ({ beat, index, total, locale }) => {
         </div>
       </div>
 
-      {/* Title + text below image */}
       <h3 className="font-display text-2xl md:text-4xl tracking-tight leading-[1.1] text-[var(--text-primary)] mt-8 mb-4">
         {title}
       </h3>
@@ -154,7 +139,6 @@ const StaticBeat = ({ beat, index, total, locale }) => {
   );
 };
 
-/* ── Narrative text block between animated beats ──────────────── */
 const NarrativeBlock = ({ beat, locale }) => {
   const text = locale === "fr" ? beat.textFr : beat.textEn;
   const color = accentHex(beat.accent);
@@ -169,7 +153,6 @@ const NarrativeBlock = ({ beat, locale }) => {
     >
       <div className="max-w-[1400px] mx-auto">
         <div className="max-w-2xl">
-          {/* Subtle accent bar */}
           <div
             className="w-10 h-[2px] mb-8"
             style={{ background: color }}
@@ -183,7 +166,6 @@ const NarrativeBlock = ({ beat, locale }) => {
   );
 };
 
-/* ── Main Internship section ──────────────────────────────────── */
 const Internship = () => {
   const { t, locale } = useI18n();
   const reduced = useReducedMotion();
@@ -195,7 +177,6 @@ const Internship = () => {
       data-testid="section-internship"
       className="relative"
     >
-      {/* Section heading — matches the site's established pattern */}
       <div className="px-6 md:px-12 lg:px-20 pt-28 md:pt-40 pb-10 md:pb-16">
         <div className="max-w-[1400px] mx-auto">
           <div className="flex items-end justify-between flex-wrap gap-6">
@@ -233,9 +214,6 @@ const Internship = () => {
         </div>
       </div>
 
-      {/* Beats */}
-      {reduced ? (
-        /* Reduced motion: simple stacked layout, no pinning or animation */
         <div className="px-6 md:px-12 lg:px-20 pb-20 md:pb-32">
           <div className="max-w-[1400px] mx-auto">
             {INTERNSHIP_BEATS.map((beat, i) => (
@@ -250,7 +228,6 @@ const Internship = () => {
           </div>
         </div>
       ) : (
-        /* Full motion: scroll-expansion hero pattern */
         <div>
           {INTERNSHIP_BEATS.map((beat, i) => (
             <React.Fragment key={beat.id}>

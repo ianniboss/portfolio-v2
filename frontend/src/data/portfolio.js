@@ -1,4 +1,3 @@
-// Bilingual content for Ian's portfolio. Source: CV extraction.
 export const PROFILE = {
   name: "Ian Bin Syahrul Azlan",
   shortName: "Ian S. Azlan",
@@ -41,9 +40,9 @@ export const COPY = {
       eyebrow: "About",
       title: "I bring a dual-culture perspective to development.",
       paragraphs: [
-        "I'm a third-year BUT Informatique student at IUT Paul Sabatier, and a JPA (Malaysian Public Service Department) scholarship holder. I'm drawn to software development and application design - understanding how a system holds together end to end.",
+        "My focus is on software development and application design, as I enjoy figuring out how systems hold together from end to end.",
         "My coursework has taken me through PHP, Java, Python, JavaScript, and SQL, working with Git, Docker, and Linux along the way. Moving from Malaysia to France taught me to adapt fast, to new systems and new teams alike.",
-        "During a 12-week internship at CNRS's Centre de Biologie Intégrative, I worked on ISfinder, a research-facing web tool - migrating and modernizing an existing PHP application to PHP 8, fixing compatibility issues, and working directly with the database in an active research environment.",
+        "During a 12-week internship at CNRS's Centre de Biologie Intégrative, I worked on ISfinder, a research-facing web tool. I migrated the application to PHP 8, resolving compatibility issues and managing the database in an active research environment.",
       ],
       facts: [
         { k: "Languages", v: "Malay · English (C2) · French (B2)" },
@@ -63,7 +62,7 @@ export const COPY = {
     internship: {
       eyebrow: "Internship",
       title: "12 weeks at CNRS.",
-      subtitle: "A deep dive into my first professional experience — migrating ISfinder at the Centre de Biologie Intégrative.",
+      subtitle: "A deep dive into my first professional experience migrating ISfinder at the Centre de Biologie Intégrative.",
     },
     projects: {
       eyebrow: "Selected work",
@@ -121,9 +120,9 @@ export const COPY = {
       eyebrow: "À propos",
       title: "Un développeur avec une double culture.",
       paragraphs: [
-        "Étudiant en troisième année de BUT Informatique à l'IUT Paul Sabatier, et boursier de la JPA (Jabatan Perkhidmatan Awam Malaysia), je m'intéresse au développement logiciel et à la conception d'applications - comprendre comment un système tient debout de bout en bout.",
+        "Étudiant en troisième année de BUT Informatique à l'IUT Paul Sabatier, et boursier de la JPA (Jabatan Perkhidmatan Awam Malaysia), je m'intéresse au développement logiciel et à la conception d'applications pour bien comprendre comment un système tient debout de bout en bout.",
         "Ma formation m'a fait travailler avec PHP, Java, Python, JavaScript et SQL, ainsi que Git, Docker et Linux. Le passage de la Malaisie à la France m'a appris à m'adapter vite, à de nouveaux systèmes comme à de nouvelles équipes.",
-        "Lors d'un stage de 12 semaines au CNRS, au Centre de Biologie Intégrative, j'ai travaillé sur ISfinder, un outil web utilisé en contexte de recherche - migration et modernisation d'une application PHP existante vers PHP 8, résolution de problèmes de compatibilité, et manipulation directe de la base de données dans un environnement de recherche actif.",
+        "Lors d'un stage de 12 semaines au CNRS, au Centre de Biologie Intégrative, j'ai travaillé sur ISfinder, un outil web utilisé en contexte de recherche. J'ai migré l'application vers PHP 8 en résolvant des problèmes de compatibilité, tout en manipulant directement la base de données dans un environnement de recherche actif.",
       ],
       facts: [
         { k: "Langues", v: "Malais · Anglais (C2) · Français (B2)" },
@@ -143,7 +142,7 @@ export const COPY = {
     internship: {
       eyebrow: "Stage",
       title: "12 semaines au CNRS.",
-      subtitle: "Un regard approfondi sur ma première expérience professionnelle — la migration d'ISfinder au Centre de Biologie Intégrative.",
+      subtitle: "Un regard approfondi sur ma première expérience professionnelle de migration d'ISfinder au Centre de Biologie Intégrative.",
     },
     projects: {
       eyebrow: "Sélection",
@@ -180,26 +179,21 @@ export const COPY = {
   },
 };
 
-// Skill groups: amber=languages, teal=web, purple=data, slate=devops
 export const SKILLS = [
-  // Languages
   { name: "Java", group: "lang", level: 0.9 },
   { name: "Python", group: "lang", level: 0.7 },
   { name: "PHP", group: "lang", level: 0.7 },
   { name: "C", group: "lang", level: 0.6 },
   { name: "JavaScript", group: "lang", level: 0.75 },
-  // Web
   { name: "React", group: "web", level: 0.7 },
   { name: "HTML", group: "web", level: 0.85 },
   { name: "CSS", group: "web", level: 0.8 },
   { name: "REST APIs", group: "web", level: 0.7 },
-  // Data
   { name: "SQL", group: "data", level: 0.85 },
   { name: "PL/SQL", group: "data", level: 0.75 },
   { name: "Oracle APEX", group: "data", level: 0.65 },
   { name: "SQLite", group: "data", level: 0.7 },
   { name: "MariaDB", group: "data", level: 0.7 },
-  // DevOps / tools
   { name: "Linux", group: "ops", level: 0.7 },
   { name: "Git", group: "ops", level: 0.85 },
   { name: "Docker", group: "ops", level: 0.75 },
@@ -210,13 +204,12 @@ export const SKILLS = [
 ];
 
 export const SKILL_GROUP_COLORS = {
-  lang: "#C8903A", // amber
-  web: "#2A8B7A", // teal
-  data: "#8C6BB6", // muted purple
-  ops: "#9A9490", // slate
+  lang: "#C8903A",
+  web: "#2A8B7A",
+  data: "#8C6BB6",
+  ops: "#9A9490",
 };
 
-// Projects (from Ian's previous portfolio)
 const GH = "https://github.com/ianniboss";
 
 export const PROJECTS = [
@@ -231,9 +224,9 @@ export const PROJECTS = [
     accent: "amber",
     image: "/assets/projects/parking.png",
     descEn:
-      "A team-built parking management system for Toulouse, developed as part of SAE3.01 at IUT Paul Sabatier. I designed the relational database in PL/SQL and built the Java desktop interface with Eclipse WindowBuilder, working as one of four developers in a Scrum team, with code quality tracked via SonarQube and test coverage via JaCoCo.",
+      "A team-built parking management system for Toulouse, developed as part of SAE3.01 at IUT Paul Sabatier. I designed the relational database in PL/SQL and built the Java desktop interface with Eclipse WindowBuilder. As part of a four-person Scrum team, I ensured code quality using SonarQube and JaCoCo for test coverage.",
     descFr:
-      "Un système de gestion de stationnement pour Toulouse, développé dans le cadre de la SAE3.01 à l'IUT Paul Sabatier. J'ai conçu la base de données relationnelle en PL/SQL et développé l'interface Java avec Eclipse (WindowBuilder), en tant que l'un des quatre développeurs d'une équipe Scrum, avec un suivi qualité via SonarQube et une couverture de tests via JaCoCo.",
+      "Un système de gestion de stationnement pour Toulouse, développé dans le cadre de la SAE3.01 à l'IUT Paul Sabatier. J'ai conçu la base de données relationnelle en PL/SQL et développé l'interface Java avec Eclipse (WindowBuilder). Au sein d'une équipe Scrum de quatre personnes, j'ai assuré le suivi qualité via SonarQube et la couverture de tests via JaCoCo.",
     stack: ["Java", "PL/SQL", "SQL Developer", "Eclipse", "SCRUM", "SonarQube", "JaCoCo"],
     sourceUrl: "https://github.com/ianniboss/se-garer-sur-toulouse",
   },
@@ -248,9 +241,9 @@ export const PROJECTS = [
     accent: "teal",
     image: "/assets/projects/apache_ssl.png",
     descEn:
-      "I deployed and hardened an Apache2 server with SSL on Linux. I configured virtual hosts, managed certificates, tuned cipher suites, defined iptables rules, and enforced fail2ban.",
+      "I deployed and hardened an Apache2 server with SSL on Linux. This involved configuring virtual hosts, managing certificates, and tuning cipher suites, while securing the system using iptables and fail2ban.",
     descFr:
-      "J'ai déployé et sécurisé un serveur Apache2 avec SSL sous Linux. J'ai configuré les hôtes virtuels, géré les certificats, ajusté les suites cryptographiques, défini les règles iptables et activé fail2ban.",
+      "J'ai déployé et sécurisé un serveur Apache2 avec SSL sous Linux. Ce travail comprenait la configuration des hôtes virtuels, la gestion des certificats et l'ajustement des suites cryptographiques, tout en protégeant le système avec iptables et fail2ban.",
     stack: ["Linux", "Apache2", "SSL/TLS", "iptables", "fail2ban"],
   },
   {
@@ -264,9 +257,9 @@ export const PROJECTS = [
     accent: "purple",
     image: "/assets/projects/web_doc.png",
     descEn:
-      "I built a multimedia documentary with video, audio, responsive layouts, and interactive storytelling. This project demonstrates how interactivity increases user engagement.",
+      "I built a multimedia documentary integrating video, audio, and responsive layouts to support interactive storytelling. The goal was to explore how active participation drives user engagement.",
     descFr:
-      "J'ai créé un documentaire multimédia avec vidéo, audio et narration interactive. Ce projet montre comment l'interactivité augmente l'engagement des utilisateurs.",
+      "J'ai créé un documentaire multimédia intégrant vidéo, audio et layouts responsifs pour soutenir une narration interactive. L'objectif était d'explorer comment la participation active stimule l'engagement des utilisateurs.",
     stack: ["HTML", "CSS", "JavaScript", "Web Design"],
     demoUrl: "https://viewer.pandasuite.com/2kTY2xBI",
   },
@@ -281,9 +274,9 @@ export const PROJECTS = [
     accent: "amber",
     image: "/assets/projects/tomato.png",
     descEn:
-      "I developed a desktop application for managing tomato products and sales, featuring a product catalog, a dynamic shopping cart, and real-time stock management. Built with Java Swing for the graphical user interface, the application relies on an embedded JSON file system for data persistence to automatically save and load stock updates. I designed the object-oriented architecture using Modelio and UML diagrams to ensure a clean separation between the user interface and core business logic.",
+      "I developed a desktop application for managing tomato products and sales, featuring a product catalog, a dynamic shopping cart, and real-time stock management. Built with Java Swing, it uses an embedded JSON file system to automatically save and load stock updates. I structured the object-oriented architecture with Modelio and UML diagrams to keep the interface distinct from the core logic.",
     descFr:
-      "J'ai développé une application de bureau pour la gestion des ventes de tomates, avec un catalogue, un panier dynamique et une gestion des stocks en temps réel. Construite avec Java Swing, l'application utilise un système de fichiers JSON pour sauvegarder et charger automatiquement les stocks. J'ai conçu l'architecture orientée objet avec Modelio et des diagrammes UML pour assurer une séparation claire entre l'interface utilisateur et la logique métier.",
+      "J'ai développé une application de bureau pour la gestion des ventes de tomates, avec un catalogue, un panier dynamique et une gestion des stocks en temps réel. Construite avec Java Swing, elle utilise un système de fichiers JSON pour sauvegarder et charger les mises à jour de stock automatiquement. J'ai structuré l'architecture orientée objet avec Modelio et des diagrammes UML pour bien séparer l'interface de la logique principale.",
     stack: ["Java", "Swing", "JSON", "Modelio", "UML", "Maven", "OOP"],
     sourceUrl: `${GH}/S201_TOMATES`,
   },
@@ -298,9 +291,9 @@ export const PROJECTS = [
     accent: "teal",
     image: "/assets/projects/lol_stats.png",
     descEn:
-      "I developed an interactive Oracle APEX dashboard to analyze League of Legends match data from the Riot Games API. I designed SQL queries, views, functions, and triggers to extract performance metrics and created interactive visualizations to explore correlations between gold earned, damage dealt, and match outcomes.",
+      "I built an Oracle APEX dashboard to analyze League of Legends match data from the Riot Games API. I wrote the underlying SQL queries, views, and database triggers to extract performance metrics. The dashboard visualizes these statistics to show how factors like gold earned and damage dealt relate to match outcomes.",
     descFr:
-      "J'ai développé un tableau de bord Oracle APEX interactif pour analyser les données de matchs League of Legends de l'API Riot Games. J'ai conçu des requêtes SQL, vues, fonctions et déclencheurs pour extraire des métriques de performance et créé des visualisations interactives explorant les corrélations entre l'or gagné, les dégâts infligés et les résultats des matchs.",
+      "J'ai conçu un tableau de bord Oracle APEX pour analyser les données de matchs League of Legends provenant de l'API Riot Games. J'ai écrit les requêtes SQL, vues et déclencheurs nécessaires à l'extraction des métriques de performance. Le tableau de bord visualise ces statistiques pour illustrer le lien entre des facteurs comme l'or gagné ou les dégâts infligés et l'issue des matchs.",
     stack: ["Oracle APEX", "SQL", "Riot API", "Data Analysis", "Data Visualization"],
   },
   {
@@ -314,9 +307,9 @@ export const PROJECTS = [
     accent: "purple",
     image: "/assets/projects/graphs.png",
     descEn:
-      "I implemented and benchmarked Dijkstra and Bellman-Ford algorithms to evaluate their empirical time complexity. Additionally, I generated random weighted adjacency matrices, visualized shortest paths with Matplotlib, and analyzed strong connectivity thresholds using the Roy-Warshall algorithm.",
+      "I implemented the Dijkstra and Bellman-Ford algorithms to benchmark their empirical time complexity. The project also involved generating random weighted adjacency matrices, visualizing shortest paths using Matplotlib, and analyzing strong connectivity thresholds with the Roy-Warshall algorithm.",
     descFr:
-      "J'ai implémenté et évalué les algorithmes de Dijkstra et Bellman-Ford pour analyser leur complexité temporelle empirique. J'ai également généré des matrices d'adjacence aléatoires pondérées, visualisé des plus courts chemins avec Matplotlib, et analysé les seuils de forte connexité avec l'algorithme de Roy-Warshall.",
+      "J'ai implémenté les algorithmes de Dijkstra et Bellman-Ford pour mesurer leur complexité temporelle empirique. Le projet comprenait aussi la génération de matrices d'adjacence aléatoires pondérées, la visualisation des plus courts chemins via Matplotlib et l'analyse des seuils de forte connexité avec l'algorithme de Roy-Warshall.",
     stack: ["Python", "Algorithms", "Graph Theory", "Matplotlib", "Benchmarking"],
   },
   {
@@ -330,9 +323,9 @@ export const PROJECTS = [
     accent: "amber",
     image: "/assets/projects/mh_students.png",
     descEn:
-      "I connect Malaysian students in France through this platform. The hub provides event tracking, administrative guides, location services, and real-time updates using React and Firebase.",
+      "I launched this React and Firebase platform to bring Malaysian students in France together. Beyond simply tracking community events and live updates, it serves as a central guide for administrative processes and navigating new cities.",
     descFr:
-      "Je connecte les étudiants malaisiens en France via cette plateforme. Le hub propose des événements, des guides, un service de localisation et des mises à jour en direct avec React et Firebase.",
+      "J'ai lancé cette plateforme sous React et Firebase pour rassembler les étudiants malaisiens en France. Au-delà du simple suivi des événements et des mises à jour en direct, elle sert de guide central pour gérer les démarches administratives et découvrir de nouvelles villes.",
     stack: ["React", "Firebase", "Firestore", "Google Maps API"],
     sourceUrl: `${GH}/malaysian-students-resource-hub`,
     ongoing: true,
@@ -348,9 +341,9 @@ export const PROJECTS = [
     accent: "teal",
     image: "/assets/projects/trilingual.png",
     descEn:
-      "I built a real-time Malay, English, and French translator powered by the Gemini API. To deliver fast and accurate translations, I optimized the application with parallel API calls, applied targeted prompt engineering, and implemented robust rate limiting.",
+      "I built a real-time Malay, English, and French translator powered by the Gemini API. I improved the application's speed and accuracy through parallel API calls and specific prompt engineering, while handling traffic with rate limiting.",
     descFr:
-      "J'ai développé un traducteur en temps réel pour le malais, l'anglais et le français, propulsé par l'API Gemini. Pour assurer des traductions rapides et précises, j'ai optimisé l'application grâce à des appels API en parallèle, affiné les résultats avec du prompt engineering et géré rigoureusement les limites de requêtes.",
+      "J'ai développé un traducteur en temps réel pour le malais, l'anglais et le français, propulsé par l'API Gemini. J'ai amélioré la vitesse et la précision de l'application grâce aux appels API en parallèle et au prompt engineering ciblé, tout en contrôlant le trafic avec un système de limite de requêtes.",
     stack: ["React", "Gemini API", "Tailwind CSS", "AI"],
     sourceUrl: `${GH}/trilingue-translator`,
   },
@@ -383,9 +376,9 @@ export const PROJECTS = [
     accent: "teal",
     image: "/assets/projects/weather.png",
     descEn:
-      "I built a web app to display real-time weather and forecasts. I implemented a mobile-first UI, dynamic icon mapping, and optimized data payloads.",
+      "I built a web app to display real-time weather and forecasts. The development focused on a mobile-first interface, while optimizing the data payloads and dynamically mapping weather icons.",
     descFr:
-      "J'ai créé une application web pour afficher la météo en temps réel. J'ai développé une interface mobile-first, le mapping dynamique des icônes et optimisé les données reçues.",
+      "J'ai créé une application web pour afficher la météo en temps réel. Le développement s'est concentré sur une interface mobile-first, tout en optimisant les données reçues et le mapping des icônes météorologiques.",
     stack: ["React", "OpenWeatherMap API", "Web Design"],
     demoUrl: "https://weather-app-ian.vercel.app",
     sourceUrl: `${GH}/weather-app`,
@@ -401,9 +394,9 @@ export const PROJECTS = [
     accent: "amber",
     image: "/assets/projects/football.png",
     descEn:
-      "This app helps coaches manage players, matches, and statistics. I built a PHP MVC backend. I designed a normalized MySQL schema and a responsive statistics dashboard.",
+      "This application allows coaches to manage players, matches, and team statistics. I built it with a PHP MVC backend connected to a normalized MySQL database, and created a responsive dashboard for viewing stats.",
     descFr:
-      "Cette application aide les entraîneurs à gérer les joueurs, les matchs et les statistiques. J'ai développé le backend PHP MVC et structuré la base de données MySQL.",
+      "Cette application permet aux entraîneurs de gérer leurs joueurs, leurs matchs et les statistiques de l'équipe. Je l'ai construite avec un backend PHP MVC couplé à une base MySQL normalisée.",
     stack: ["PHP", "MySQL", "CSS", "MVC"],
     demoUrl: "http://ftm.wuaze.com",
     sourceUrl: `${GH}/football-team-manager`,
@@ -420,9 +413,9 @@ export const PROJECTS = [
     accent: "amber",
     image: "/assets/projects/sonic.png",
     descEn:
-      "I developed a fast media format converter. The app features a Sonic theme, queue management, progress updates, and a Node backend pipeline.",
+      "I built this media format converter around a fast Node.js backend. Rather than a basic progress bar, users queue their files through a Sonic-themed interface that visualizes the conversion process in real time.",
     descFr:
-      "J'ai développé un convertisseur de formats médias rapide. L'application propose un thème Sonic, la gestion de la file d'attente et un backend Node.",
+      "J'ai conçu ce convertisseur de médias en m'appuyant sur un backend Node.js rapide. Au lieu d'une simple barre de chargement, les utilisateurs ajoutent leurs fichiers à une file d'attente via une interface sur le thème de Sonic qui illustre la progression en direct.",
     stack: ["React", "Node.js", "Vercel"],
     demoUrl: "https://sonic-mp3-converter.vercel.app",
     sourceUrl: `${GH}/sonic-mp3-converter`,
@@ -438,9 +431,9 @@ export const PROJECTS = [
     accent: "purple",
     image: "/assets/projects/mario.png",
     descEn:
-      "I created a productivity dashboard using the Notion API. The app uses a Mario theme to track tasks and goals. I integrated gamification elements.",
+      "I built a productivity dashboard linked to the Notion API that tracks tasks and goals. It uses a Mario theme to introduce gamification elements into daily planning.",
     descFr:
-      "J'ai créé un tableau de bord de productivité avec l'API Notion. L'application utilise un thème Mario pour suivre les tâches et intègre des éléments de gamification.",
+      "J'ai conçu un tableau de bord de productivité connecté à l'API Notion pour suivre les tâches et les objectifs. Il s'appuie sur un thème Mario pour intégrer des éléments de gamification au planning quotidien.",
     stack: ["React", "Notion API", "Tailwind CSS"],
     demoUrl: "https://mario-notion.vercel.app",
     sourceUrl: `${GH}/mario-notion`,
@@ -456,9 +449,9 @@ export const PROJECTS = [
     accent: "blue",
     image: "/assets/projects/crypto.png",
     descEn:
-      "I developed a C-based command-line application implementing classical encryption algorithms like Caesar and Vigenère ciphers. Working in a pair, I designed an interactive spy-themed menu to encrypt and decrypt messages, utilizing a modular codebase and a Makefile build system.",
+      "I developed a C-based command-line application implementing classical encryption algorithms like Caesar and Vigenère ciphers. As part of a two-person team, I programmed an interactive spy-themed menu for message encryption and decryption, supported by a modular codebase and a Makefile build system.",
     descFr:
-      "J'ai développé une application en ligne de commande en C implémentant des algorithmes de chiffrement classiques comme César et Vigenère. En binôme, j'ai conçu un menu interactif sur le thème de l'espionnage pour chiffrer et déchiffrer des messages, en utilisant un code modulaire et un système de build Makefile.",
+      "J'ai développé une application en ligne de commande en C implémentant des algorithmes de chiffrement classiques comme César et Vigenère. En binôme, j'ai développé un menu interactif sur le thème de l'espionnage permettant de chiffrer et déchiffrer des messages, soutenu par un code modulaire et un build via Makefile.",
     stack: ["C", "Cryptography", "Algorithms", "Makefile", "CLI"],
     sourceUrl: `${GH}/MiniProjetC_BINSYAHRULAZLAN_HILAIRE`,
   },
@@ -470,8 +463,8 @@ export const TIMELINE = [
     titleEn: "Web Developer Intern (12 weeks)",
     titleFr: "Stagiaire développeur web (12 semaines)",
     org: "CNRS (ISFinder) Toulouse",
-    descEn: "During a 12-week internship at CNRS's Centre de Biologie Intégrative, I migrated ISfinder and ISadmin to PHP 8.5, identified and isolated a critical database architecture risk, and shipped four internal admin tools.",
-    descFr: "Lors d'un stage de 12 semaines au Centre de Biologie Intégrative du CNRS, j'ai migré ISfinder et ISadmin vers PHP 8.5, identifié et isolé un risque d'architecture critique, et développé quatre outils d'administration internes.",
+    descEn: "During my 12-week internship at CNRS's Centre de Biologie Intégrative, I migrated ISfinder and ISadmin to PHP 8.5. I also spotted and secured a critical risk in the database architecture while delivering four new internal admin tools.",
+    descFr: "Durant mon stage de 12 semaines au Centre de Biologie Intégrative du CNRS, j'ai migré ISfinder et ISadmin vers PHP 8.5. J'ai également sécurisé une vulnérabilité critique de l'architecture de la base de données et conçu quatre nouveaux outils d'administration.",
     kind: "work",
   },
   {
@@ -479,8 +472,8 @@ export const TIMELINE = [
     titleEn: "BUT Informatique",
     titleFr: "BUT Informatique",
     org: "IUT Paul Sabatier, Université Toulouse III",
-    descEn: "I built Java applications, designed relational databases with PL/SQL, and developed a React web application through academic and personal projects.",
-    descFr: "J'ai développé des applications Java, conçu des bases relationnelles en PL/SQL et réalisé une application web React à travers mes projets.",
+    descEn: "Through both academic coursework and personal projects, I learned to build Java applications, design relational databases using PL/SQL, and create web applications with React.",
+    descFr: "À travers ma formation et mes projets personnels, j'ai appris à développer des applications Java, à concevoir des bases de données relationnelles en PL/SQL et à créer des applications web avec React.",
     kind: "edu",
   },
   {
@@ -497,8 +490,8 @@ export const TIMELINE = [
     titleEn: "Sijil Pelajaran Malaysia",
     titleFr: "Sijil Pelajaran Malaysia",
     org: "Tuanku Munawir Science School, Malaysia",
-    descEn: "I earned Malaysia's national secondary diploma (SPM) with 9A+, my strongest subjects in science and mathematics.",
-    descFr: "J'ai obtenu le diplôme national malaisien (SPM) avec 9A+, avec de meilleurs résultats en sciences et en mathématiques.",
+    descEn: "I earned Malaysia's national secondary diploma (SPM) with 9A+ in the pure science stream, specializing in sciences and mathematics.",
+    descFr: "J'ai obtenu le diplôme national malaisien (SPM) avec la note de 9A+ en filière scientifique (sciences pures et mathématiques).",
     kind: "edu",
   },
 ];
@@ -522,19 +515,6 @@ export const COMMUNITY = [
   },
 ];
 
-/**
- * Internship section — narrative beats for the Scroll Expansion Hero section.
- *
- * IMAGE PLACEHOLDERS:
- *   Drop your real photos into  public/assets/internship/  using these filenames:
- *     01-the-place.jpg       — Photo of CBI / CNRS building
- *     02-the-problem.png     — Screenshot of the legacy app / codebase
- *     03-the-pivot.jpg       — Planning / whiteboard / pivot moment photo
- *     04-hardening.jpg       — Code / debugging / public-site work photo
- *     05-admin-tools.jpg     — Admin interface / tools screenshot or photo
- *     06-design-touch.jpg    — Card carousel redesign or closing photo
- *   The component references these paths directly — no code changes needed.
- */
 export const INTERNSHIP_BEATS = [
   {
     id: "the-place",
@@ -580,9 +560,9 @@ export const INTERNSHIP_BEATS = [
     titleEn: "Fixing what was breaking",
     titleFr: "Réparer ce qui cassait",
     textEn:
-      "I fixed the fatal errors PHP 8.5 introduced, including missing-variable checks, session ID sanitization, and null-safe database inserts. I then modernized the BLAST search module so it no longer depended on hardcoded absolute paths, and rebuilt the CAPTCHA system from scratch so a failed check no longer wiped out what a user had already typed.",
+      "I fixed the fatal errors introduced by PHP 8.5 by adding missing variable checks, sanitizing session IDs, and enforcing null-safe database inserts. After that, I updated the BLAST search module to remove its reliance on hardcoded absolute paths. I also rebuilt the CAPTCHA system entirely so that a failed verification wouldn't erase the user's input.",
     textFr:
-      "J'ai corrigé les erreurs fatales introduites par PHP 8.5, notamment la vérification des variables manquantes, le nettoyage des identifiants de session et les insertions en base sécurisées. J'ai ensuite modernisé le module de recherche BLAST pour qu'il ne dépende plus de chemins absolus codés en dur, et entièrement reconstruit le système de CAPTCHA pour qu'un échec de validation n'efface plus la saisie déjà faite par l'utilisateur.",
+      "J'ai corrigé les erreurs fatales liées au passage à PHP 8.5 en contrôlant les variables manquantes, en nettoyant les identifiants de session et en sécurisant les insertions en base de données. Par la suite, j'ai mis à jour le module de recherche BLAST pour supprimer les chemins absolus codés en dur. J'ai aussi recréé le système de CAPTCHA pour éviter qu'une erreur de saisie n'efface les données de l'utilisateur.",
   },
   {
     id: "admin-tools",
@@ -604,9 +584,9 @@ export const INTERNSHIP_BEATS = [
     titleEn: "One more thing, and what I took from it",
     titleFr: "Une dernière chose, et ce que j'en retiens",
     textEn:
-      "I also proposed and shipped a redesign of the platform's resource-links page into a card carousel, spotlighting the databases researchers reach for most. Twelve weeks in someone else's production code, on a real research team, taught me that \"modernize this\" almost always means finding the actual problem first. That's what I'm looking to build on in an alternance.",
+      "I also proposed and built a redesign of the platform's resource-links page, turning it into a card carousel to highlight the most frequently used databases. Spending twelve weeks navigating an existing production codebase with a real research team taught me that \"modernization\" is mostly about identifying the root problems first. This practical mindset is what I want to bring to my next alternance.",
     textFr:
-      "J'ai aussi proposé et livré une refonte de la page de liens de la plateforme sous forme de carrousel de cartes, mettant en avant les bases de données les plus consultées par les chercheurs. Douze semaines dans le code de production de quelqu'un d'autre, au sein d'une véritable équipe de recherche, m'ont appris que « moderniser » signifie presque toujours trouver le vrai problème avant tout. C'est sur cette base que je veux continuer à construire en alternance.",
+      "J'ai aussi proposé et intégré une refonte de la page des ressources de la plateforme, utilisant un carrousel de cartes pour mettre en évidence les bases de données les plus consultées. Passer douze semaines dans le code de production d'une autre équipe m'a appris qu'une mission de « modernisation » commence toujours par l'identification des vrais problèmes sous-jacents. C'est cette approche concrète que je souhaite appliquer lors de mon alternance.",
   },
 ];
 

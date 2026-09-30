@@ -132,7 +132,6 @@ const Inbox = ({ token, onLogout }) => {
 
   useEffect(() => {
     load();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const onDelete = async (id) => {
@@ -141,7 +140,6 @@ const Inbox = ({ token, onLogout }) => {
       await axios.delete(`${API}/admin/contact/${id}`, { headers });
       setMessages((prev) => prev.filter((m) => m.id !== id));
       if (selected?.id === id) setSelected(null);
-      // Refresh stats
       const s = await axios.get(`${API}/admin/stats`, { headers });
       setStats(s.data);
     } catch (e) {
@@ -209,7 +207,6 @@ const Inbox = ({ token, onLogout }) => {
       </header>
 
       <div className="flex-1 grid grid-cols-1 md:grid-cols-[380px_1fr]">
-        {/* List */}
         <aside className="border-r border-white/10 max-h-[calc(100vh-72px)] overflow-y-auto">
           <div className="p-4 sticky top-0 bg-[var(--bg-base)]/95 backdrop-blur z-10 border-b border-white/5">
             <input
@@ -282,7 +279,6 @@ const Inbox = ({ token, onLogout }) => {
           </ul>
         </aside>
 
-        {/* Detail */}
         <main className="p-8 md:p-12">
           {!selected ? (
             <div className="text-[var(--text-secondary)] font-mono text-sm">
@@ -337,7 +333,6 @@ const Inbox = ({ token, onLogout }) => {
 const Admin = () => {
   const [token, setToken] = useState(() => localStorage.getItem(TOKEN_KEY) || "");
 
-  // Verify cached token is still valid
   useEffect(() => {
     if (!token) return;
     axios

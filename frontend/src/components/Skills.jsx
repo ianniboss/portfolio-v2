@@ -11,13 +11,11 @@ const GROUPS = [
   { key: "ops", labelEn: "DevOps", labelFr: "DevOps" },
 ];
 
-/* ── single progress bar row ─────────────────────────────────── */
 const SkillBar = ({ name, level, color, animate }) => {
   const barRef = useRef(null);
   const [width, setWidth] = useState(animate ? 0 : level * 100);
 
   const triggerFill = useCallback(() => {
-    // small rAF delay so the transition is visible after mount
     requestAnimationFrame(() => setWidth(level * 100));
   }, [level]);
 
@@ -68,7 +66,6 @@ const SkillBar = ({ name, level, color, animate }) => {
   );
 };
 
-/* ── category block ──────────────────────────────────────────── */
 const CategoryBlock = ({ groupKey, label, color, skills, animate }) => (
   <div>
     <span
@@ -89,12 +86,10 @@ const CategoryBlock = ({ groupKey, label, color, skills, animate }) => (
   </div>
 );
 
-/* ── main section ────────────────────────────────────────────── */
 const Skills = () => {
   const { t, locale } = useI18n();
   const reduced = useReducedMotion();
 
-  // Group skills by category key
   const grouped = GROUPS.map((g) => ({
     ...g,
     label: locale === "fr" ? g.labelFr : g.labelEn,
@@ -109,7 +104,6 @@ const Skills = () => {
       className="relative py-28 md:py-40 px-6 md:px-12 lg:px-20"
     >
       <div className="max-w-[1400px] mx-auto">
-        {/* heading row */}
         <div className="mb-16">
           <div className="eyebrow">/ 02 {t.skills.eyebrow}</div>
           <h2
@@ -123,7 +117,6 @@ const Skills = () => {
           </p>
         </div>
 
-        {/* category grid */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}

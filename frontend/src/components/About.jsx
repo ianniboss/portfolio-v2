@@ -37,7 +37,6 @@ const About = () => {
         </motion.div>
 
         <div className="mt-10 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
-          {/* Portrait column */}
           <motion.div
             initial="hidden"
             whileInView="show"
@@ -66,7 +65,6 @@ const About = () => {
               </div>
             </div>
 
-            {/* Facts table */}
             <ul className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-6 font-mono text-[12px]">
               {t.about.facts.map((f, idx) => (
                 <li
@@ -83,7 +81,6 @@ const About = () => {
             </ul>
           </motion.div>
 
-          {/* Text column */}
           <div className="lg:col-span-7">
             <motion.h2
               initial="hidden"
@@ -113,7 +110,6 @@ const About = () => {
               ))}
             </div>
 
-            {/* Globe + caption */}
             <motion.div
               initial="hidden"
               whileInView="show"

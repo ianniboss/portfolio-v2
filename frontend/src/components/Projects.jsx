@@ -25,7 +25,6 @@ const ProjectCover = ({ hue, accent, title, year, ongoing, imageUrl }) => (
         `radial-gradient(120% 80% at 80% 0%, hsla(${hue}, 55%, 38%, 0.45) 0%, hsla(${hue}, 50%, 18%, 0.45) 40%, #0A0F1A 100%), #141820`,
     }}
   >
-    {/* Styled Project Screenshot */}
     {imageUrl && (
       <img
         src={imageUrl}
@@ -33,7 +32,6 @@ const ProjectCover = ({ hue, accent, title, year, ongoing, imageUrl }) => (
         className="absolute inset-0 w-full h-full object-cover opacity-20 filter grayscale contrast-125 mix-blend-luminosity group-hover:opacity-35 transition-opacity duration-500"
       />
     )}
-    {/* Pattern: dotted grid */}
     <div
       className="absolute inset-0 opacity-25"
       style={{
@@ -42,7 +40,6 @@ const ProjectCover = ({ hue, accent, title, year, ongoing, imageUrl }) => (
         backgroundSize: "16px 16px",
       }}
     />
-    {/* Pattern: diagonal lines */}
     <div
       className="absolute inset-0 opacity-20 mix-blend-overlay"
       style={{
@@ -95,7 +92,6 @@ const ProjectCard = ({ project, index, locale }) => {
         data-testid={`project-card-${project.id}`}
         data-magnetic
       >
-        {/* Front */}
         <div className="flip-face border border-white/10 rounded-sm overflow-hidden bg-[var(--surface-card)]">
           <ProjectCover
             hue={project.coverHue}
@@ -106,7 +102,6 @@ const ProjectCard = ({ project, index, locale }) => {
             imageUrl={project.image}
           />
         </div>
-        {/* Back */}
         <div className="flip-face flip-back border border-white/10 rounded-sm overflow-hidden bg-[var(--surface-card)] p-6 flex flex-col justify-between">
           <div>
             <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-[var(--amber)] mb-3">
@@ -174,7 +169,6 @@ const ProjectCard = ({ project, index, locale }) => {
         </div>
       </div>
 
-      {/* Mobile flip toggle (since hover doesn't apply) */}
       <button
         type="button"
         onClick={() => setFlipped((f) => !f)}

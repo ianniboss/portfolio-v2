@@ -1,10 +1,5 @@
 import React from "react";
 
-/**
- * Lightweight error boundary used to wrap each 3D canvas / heavy section.
- * If any descendant throws (e.g. WebGL context loss, late prop mutations),
- * we hide the broken subtree instead of bringing down the whole page.
- */
 class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);

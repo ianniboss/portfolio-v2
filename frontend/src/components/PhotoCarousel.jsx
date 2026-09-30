@@ -36,13 +36,12 @@ const PhotoCarousel = () => {
   const handleDragEnd = (e, { offset, velocity }) => {
     const swipe = offset.x;
     if (swipe < -50) {
-      navigate(1); // Swipe left goes to next
+      navigate(1);
     } else if (swipe > 50) {
-      navigate(-1); // Swipe right goes to prev
+      navigate(-1);
     }
   };
 
-  // Scroll active thumbnail into view on mobile
   useEffect(() => {
     if (thumbnailsRef.current) {
       const activeThumb = thumbnailsRef.current.children[currentIndex];
@@ -90,7 +89,6 @@ const PhotoCarousel = () => {
     >
       <div className="eyebrow mb-4">/ {t.experience.communityMoments}</div>
       
-      {/* Main Image Container */}
       <div className="relative w-full aspect-[3/2] rounded-xl overflow-hidden bg-[var(--bg-secondary)] focus-within:ring-2 focus-within:ring-[var(--amber)]">
         <AnimatePresence initial={false} custom={direction}>
           <motion.img
@@ -116,10 +114,8 @@ const PhotoCarousel = () => {
           />
         </AnimatePresence>
 
-        {/* Gradient Overlay for Caption */}
         <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent pointer-events-none z-[1]" />
 
-        {/* Caption */}
         <div 
           className="absolute bottom-4 md:bottom-6 left-4 md:left-6 text-white text-sm md:text-base font-display drop-shadow-md z-10"
           aria-live="polite"
@@ -127,7 +123,6 @@ const PhotoCarousel = () => {
           {caption}
         </div>
 
-        {/* Counter */}
         <div 
           className="absolute bottom-4 md:bottom-6 left-1/2 -translate-x-1/2 bg-black/50 backdrop-blur-sm text-white font-mono text-xs md:text-sm px-3 py-1 rounded-full z-10 tracking-widest"
           aria-live="polite"
@@ -135,7 +130,6 @@ const PhotoCarousel = () => {
           {String(currentIndex + 1).padStart(2, '0')} / {String(images.length).padStart(2, '0')}
         </div>
 
-        {/* Navigation Arrows */}
         <button
           onClick={() => navigate(-1)}
           className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-black/40 hover:bg-black/60 backdrop-blur-sm text-white transition-colors z-10 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--amber)]"
@@ -156,7 +150,6 @@ const PhotoCarousel = () => {
         </button>
       </div>
 
-      {/* Thumbnails */}
       <div 
         ref={thumbnailsRef}
         className="flex gap-2 mt-4 overflow-x-auto snap-x snap-mandatory pb-2 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"

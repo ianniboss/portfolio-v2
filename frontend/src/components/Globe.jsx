@@ -4,7 +4,6 @@ import { Sphere, Line } from "@react-three/drei";
 import * as THREE from "three";
 import { useReducedMotion } from "../hooks/useReducedMotion";
 
-// Convert (lat, lon) to 3D point on unit sphere
 const latLonToVec3 = (lat, lon, radius = 1) => {
   const phi = (90 - lat) * (Math.PI / 180);
   const theta = (lon + 180) * (Math.PI / 180);
@@ -34,7 +33,6 @@ const DotGlobe = () => {
     groupRef.current.rotation.y += delta * 0.18;
   });
 
-  // ~600 dots roughly distributed by Fibonacci
   const dots = React.useMemo(() => {
     const N = 480;
     const arr = [];
@@ -48,7 +46,6 @@ const DotGlobe = () => {
     return arr;
   }, []);
 
-  // Malaysia (Kuala Lumpur) ~ 3.14, 101.69. France (Toulouse) ~ 43.6, 1.44
   const malaysia = latLonToVec3(3.14, 101.69, 1);
   const france = latLonToVec3(43.6, 1.44, 1);
   const arcPoints = GREAT_CIRCLE(malaysia, france);
@@ -64,17 +61,14 @@ const DotGlobe = () => {
           <meshBasicMaterial color="#9A9490" />
         </mesh>
       ))}
-      {/* Pin: Malaysia */}
       <mesh position={[malaysia.x * 1.04, malaysia.y * 1.04, malaysia.z * 1.04]}>
         <sphereGeometry args={[0.035, 12, 12]} />
         <meshBasicMaterial color="#C8903A" />
       </mesh>
-      {/* Pin: France */}
       <mesh position={[france.x * 1.04, france.y * 1.04, france.z * 1.04]}>
         <sphereGeometry args={[0.035, 12, 12]} />
         <meshBasicMaterial color="#2A8B7A" />
       </mesh>
-      {/* Arc */}
       <Line points={arcPoints} color="#C8903A" lineWidth={1.4} transparent opacity={0.9} />
     </group>
   );

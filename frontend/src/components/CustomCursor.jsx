@@ -1,8 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { useIsCoarsePointer, useReducedMotion } from "../hooks/useReducedMotion";
 
-// A minimal magnetic cursor: a dot + an outline ring that lerps toward the mouse.
-// When hovering [data-magnetic] elements, the ring expands.
 const CustomCursor = () => {
   const dotRef = useRef(null);
   const ringRef = useRef(null);

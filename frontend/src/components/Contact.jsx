@@ -10,7 +10,7 @@ const FORMSPREE_ID = "xpqnenzg";
 const Contact = () => {
   const { t, locale } = useI18n();
   const [form, setForm] = useState({ name: "", email: "", message: "" });
-  const [status, setStatus] = useState("idle"); // idle | sending | success | error
+  const [status, setStatus] = useState("idle");
   const [errorMsg, setErrorMsg] = useState("");
 
   const onSubmit = async (e) => {
@@ -39,7 +39,6 @@ const Contact = () => {
       data-testid="section-contact"
       className="relative py-28 md:py-40 px-6 md:px-12 lg:px-20 overflow-hidden"
     >
-      {/* Particle background */}
       <div className="absolute inset-0 z-0 opacity-70" aria-hidden="true">
         <ErrorBoundary fallback={<div className="w-full h-full" />}>
           <ContactParticles />
