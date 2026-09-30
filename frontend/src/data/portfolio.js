@@ -541,8 +541,8 @@ export const INTERNSHIP_BEATS = [
     image: "/assets/internship/01-the-place.jpg",
     accent: "teal",
     date: "Apr 2026",
-    titleEn: "The place",
-    titleFr: "Le lieu",
+    titleEn: "Where it started",
+    titleFr: "Là où tout a commencé",
     textEn:
       "Twelve weeks at CNRS's Centre de Biologie Intégrative in Toulouse, under Patricia Siguier, on ISfinder, a research platform cataloguing insertion sequences in genomic data. I started by reading: comparing PHP 8.0 and 8.2 versions of the codebase and mapping how the public site (ISfinder), the submission tool (ISsubmit), and the internal admin interface (ISadmin) actually connected.",
     textFr:
@@ -553,8 +553,8 @@ export const INTERNSHIP_BEATS = [
     image: "/assets/internship/02-the-problem.png",
     accent: "amber",
     date: "Week 1",
-    titleEn: "The problem",
-    titleFr: "Le probl\u00e8me",
+    titleEn: "What we found",
+    titleFr: "Ce qu'on a découvert",
     textEn:
       "A week in, a review with Patricia and Jocelyne surfaced something more serious than a compatibility warning. External submission forms were writing directly into the internal production database, a real risk for a platform other researchers depend on.",
     textFr:
@@ -565,8 +565,8 @@ export const INTERNSHIP_BEATS = [
     image: "/assets/internship/03-the-pivot.jpg",
     accent: "purple",
     date: "Week 2",
-    titleEn: "The pivot",
-    titleFr: "Le pivot",
+    titleEn: "A different plan",
+    titleFr: "Un plan différent",
     textEn:
       "The plan became clear: isolate a new ISsubmit database on the external server, and on Patricia and Pierre's advice, push the migration target further, from PHP 8.4 to PHP 8.5, for a codebase built to last.",
     textFr:
@@ -577,8 +577,8 @@ export const INTERNSHIP_BEATS = [
     image: "/assets/internship/04-hardening.jpg",
     accent: "teal",
     date: "Apr\u2013Jun 2026",
-    titleEn: "Hardening the public site",
-    titleFr: "Fiabiliser le site public",
+    titleEn: "Fixing what was breaking",
+    titleFr: "Réparer ce qui cassait",
     textEn:
       "I fixed the fatal errors PHP 8.5 introduced, including missing-variable checks, session ID sanitization, and null-safe database inserts. I then modernized the BLAST search module so it no longer depended on hardcoded absolute paths, and rebuilt the CAPTCHA system from scratch so a failed check no longer wiped out what a user had already typed.",
     textFr:
@@ -589,8 +589,8 @@ export const INTERNSHIP_BEATS = [
     image: "/assets/internship/05-admin-tools.jpg",
     accent: "amber",
     date: "May\u2013Jun 2026",
-    titleEn: "Building for the admin side",
-    titleFr: "Construire c\u00f4t\u00e9 administration",
+    titleEn: "Tools for the team behind the scenes",
+    titleFr: "Des outils pour l'équipe, en coulisses",
     textEn:
       "Beyond the public site, I shipped four tools for the internal ISadmin interface: a CSV export tool locked to read-only queries (blocking any accidental UPDATE/DELETE), a reference-management screen that stops you from deleting a category still in use, an incomplete-record detector so nothing falls through the cracks mid-submission, and quick-action deletion buttons that preserve linked records instead of orphaning them.",
     textFr:
@@ -601,8 +601,8 @@ export const INTERNSHIP_BEATS = [
     image: "/assets/internship/06-design-touch.jpg",
     accent: "purple",
     date: "Jun 2026",
-    titleEn: "A design touch, and what it taught me",
-    titleFr: "Une touche design, et ce que \u00e7a m\u2019a appris",
+    titleEn: "One more thing, and what I took from it",
+    titleFr: "Une dernière chose, et ce que j'en retiens",
     textEn:
       "I also proposed and shipped a redesign of the platform's resource-links page into a card carousel, spotlighting the databases researchers reach for most. Twelve weeks in someone else's production code, on a real research team, taught me that \"modernize this\" almost always means finding the actual problem first. That's what I'm looking to build on in an alternance.",
     textFr:
